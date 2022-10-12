@@ -3,3 +3,37 @@ description: Provides features for Xenyo Uni Frameworks sites.
 type: module
 package: Xenyo
 core_version_requirement: ^9 || ^10
+dependencies:
+  - admin_libraries:admin_libraries
+  - admin_toolbar:admin_toolbar
+  - asset_autoload:asset_autoload
+  - block_type_templates:block_type_templates
+  - coffee:coffee
+  - coi:coi
+  - components:components
+  - config_override_core_fields:config_override_core_fields
+  - devel:devel
+  - field_group:field_group
+  - field_name_prefix_remove:field_name_prefix_remove
+  - image_resize_filter:image_resize_filter
+  - image_widget_crop:image_widget_crop
+  - inline_entity_form:inline_entity_form
+  - layout_paragraphs:layout_paragraphs
+  - link_attributes:link_attributes
+  - media_library_edit:media_library_edit
+  - menu_save_add_another:menu_save_add_another
+  - metatag:metatag
+  - no_admin_destination_redirect:no_admin_destination_redirect
+  - paragraphs:paragraphs
+  - pathauto:pathauto
+  - quick_node_clone:quick_node_clone
+  - redirect:redirect
+  - select_text_value:select_text_value
+  - structure_sync:structure_sync
+  - svg_image_field:svg_image_field
+  - token:token
+  - twig_tools:twig_tools
+  - twig_tweak:twig_tweak
+  - twigsuggest:twigsuggest
+  - views_taxonomy_term_name_into_id:views_taxonomy_term_name_into_id
+  - weight:weight
