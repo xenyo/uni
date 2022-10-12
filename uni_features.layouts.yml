@@ -1,0 +1,7 @@
+container:
+  label: Container
+  category: Uni Features
+  template: templates/layout--container
+  regions:
+    paragraphs:
+      label: Paragraphs

@@ -1,0 +1,12 @@
+{
+    "name": "xenyo/uni_features",
+    "description": "Provides features for Xenyo Uni Framework sites.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Parkle Lee",
+            "email": "parkle.lee@xenyo.com"
+        }
+    ],
+    "require": {}
+}

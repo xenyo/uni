@@ -1,0 +1,5 @@
+name: Uni Features
+description: Provides features for Xenyo Uni Frameworks sites.
+type: module
+package: Xenyo
+core_version_requirement: ^9 || ^10
