@@ -15,6 +15,10 @@
         },
         {
             "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
@@ -55,6 +59,7 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
         "drupal/weight": "^3.3",
+        "npm-asset/blazy": "^1.8",
         "xenyo/uni-tools": "^1.0",
         "xenyo/uni_base": "^1.0"
     },
