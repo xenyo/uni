@@ -7,6 +7,8 @@ dependencies:
   - admin_libraries:admin_libraries
   - admin_toolbar:admin_toolbar
   - asset_autoload:asset_autoload
+  - blazy:blazy
+  - blazy:blazy_ui
   - block_type_templates:block_type_templates
   - coffee:coffee
   - coi:coi
