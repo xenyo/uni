@@ -17,4 +17,15 @@ function uni_features_form_alter(&$form, $form_state, $form_id) {
   if ($form_id === 'layout_paragraphs_component_form') {
     $form['#attached']['library'][] = 'uni_features/layout-paragraphs-component-form';
   }
+  else if ($form_id === 'node_page_edit_form') {
+    $form['#attached']['library'][] = 'uni_features/node-page-edit-form';
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function uni_features_page_attachments(&$attachments) {
+  $attachments['#attached']['library'][] = 'uni_features/field-group';
+  $attachments['#attached']['library'][] = 'uni_features/jquery-ui';
 }

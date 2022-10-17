@@ -1,25 +1,25 @@
-uni_features.desktop:
+uni_features.all:
   label: Desktop
   mediaQuery: ''
   weight: 0
   multipliers:
     - 1x
     - 2x
-uni_features.laptop:
+uni_features.lg:
   label: Laptop
   mediaQuery: '(max-width: 1499.98px)'
   weight: 1
   multipliers:
     - 1x
     - 2x
-uni_features.tablet:
+uni_features.md:
   label: Tablet
   mediaQuery: '(max-width: 999.98px)'
   weight: 2
   multipliers:
     - 1x
     - 2x
-uni_features.mobile:
+uni_features.sm:
   label: Mobile
   mediaQuery: '(max-width: 499.98px)'
   weight: 3
