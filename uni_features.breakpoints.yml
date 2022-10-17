@@ -1,0 +1,28 @@
+uni_features.desktop:
+  label: Desktop
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+uni_features.laptop:
+  label: Laptop
+  mediaQuery: '(max-width: 1499.98px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+uni_features.tablet:
+  label: Tablet
+  mediaQuery: '(max-width: 999.98px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+uni_features.mobile:
+  label: Mobile
+  mediaQuery: '(max-width: 499.98px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x

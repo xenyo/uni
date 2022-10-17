@@ -9,3 +9,12 @@ function uni_features_layout_alter(&$definitions) {
     return $definition->getProvider() !== 'layout_discovery';
   });
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function uni_features_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id === 'layout_paragraphs_component_form') {
+    $form['#attached']['library'][] = 'uni_features/layout-paragraphs-component-form';
+  }
+}

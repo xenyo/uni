@@ -3,6 +3,7 @@ description: Provides features for Xenyo Uni Frameworks sites.
 type: module
 package: Xenyo
 core_version_requirement: ^9 || ^10
+asset_autoload: true
 dependencies:
   - admin_libraries:admin_libraries
   - admin_toolbar:admin_toolbar
