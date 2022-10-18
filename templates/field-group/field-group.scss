@@ -1,14 +1,14 @@
-.field-group-fieldset {
-  &--inline {
-    .fieldset-wrapper {
-      display: grid;
-      grid: none / auto-flow;
-    }
+.field-group--inline {
+  & > .details-wrapper,
+  & > .fieldset-wrapper {
+    display: grid;
+    grid: none / repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
   }
 }
 
-.field-group-tab {
-  .details-wrapper {
+.horizontal-tabs-pane {
+  & > .details-wrapper {
     padding: 0;
   }
 }

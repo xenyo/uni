@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\uni_features\Style;
+namespace Drupal\uni_features\Styler;
 
 use Drupal\breakpoint\BreakpointManager;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-abstract class Style implements StyleInterface, ContainerInjectionInterface {
+abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionInterface {
 
   protected $breakpointManager;
 
@@ -23,7 +23,11 @@ abstract class Style implements StyleInterface, ContainerInjectionInterface {
     );
   }
 
-  public function style(FieldableEntityInterface $entity, string $self): array {
+  public function getStyleClass(FieldableEntityInterface $entity): string {
+    return 'style--' . $entity->id();
+  }
+
+  public function getStyleTags(FieldableEntityInterface $entity): array {
     $fields = $this->getFields();
     $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni_features');
     $styles = [];
@@ -36,11 +40,11 @@ abstract class Style implements StyleInterface, ContainerInjectionInterface {
       foreach ($fields as $field) {
         $field_name = $field . $suffix;
         if ($entity->hasField($field_name) && !$entity->get($field_name)->isEmpty()) {
-          $values[$field] = $entity->get($field_name)->getString();
+          $values[$field] = $entity->get($field_name);
         }
       }
 
-      $style = $this->getStyle($values, $self);
+      $style = $this->getStyles($values, $this->getStyleClass($entity));
       if (!empty($style)) {
         $styles[$breakpoint_id] = $style;
       }
@@ -76,7 +80,7 @@ abstract class Style implements StyleInterface, ContainerInjectionInterface {
 
   abstract protected function getFields(): array;
 
-  abstract protected function getStyle(array $values, string $self): array;
+  abstract protected function getStyles(array $values, string $style_class): array;
 
   protected function sanitizeSelector($selector) {
     return trim(preg_replace('/[\{\}]/', '', $selector));

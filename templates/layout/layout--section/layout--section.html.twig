@@ -1,9 +1,10 @@
-<div{{ attributes }}>
+<div{{ attributes.addClass('layout', 'layout--section', style_class) }}>
   {% if content.main %}
-    <div{{ region_attributes.main.addClass('region', 'region--main') }}>
-      {{ content.main }}
-    </div>
+    {% if layout.id == 'wrapped' %}<div class="wrapper">{% endif %}
+      <div{{ region_attributes.main.addClass('region', 'region--main', style_class) }}>
+        {{ content.main }}
+      </div>
+    {% if layout.id == 'wrapped' %}</div>{% endif %}
   {% endif %}
-
   {{ styles }}
 </div>

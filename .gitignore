@@ -1,4 +1,9 @@
+# Composer
 /vendor/
-composer.lock
-node_modules/
-.parcel-cache/
+/composer.lock
+
+# NPM
+/node_modules/
+
+# Parcel
+/.parcel-cache/
