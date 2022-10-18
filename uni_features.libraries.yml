@@ -1,0 +1,19 @@
+fontawesome:
+  css:
+    base:
+      /libraries/fontawesome/css/fontawesome.min.css: {}
+      /libraries/fontawesome/css/solid.min.css: {}
+      /libraries/fontawesome/css/regular.min.css: {}
+      /libraries/fontawesome/css/light.min.css: {}
+      /libraries/fontawesome/css/thin.min.css: {}
+      /libraries/fontawesome/css/sharp-solid.min.css: {}
+
+fontawesome-brands:
+  css:
+    base:
+      /libraries/fontawesome/css/brands.min.css: {}
+
+fontawesome-duotone:
+  css:
+    base:
+      /libraries/fontawesome/css/duotone.min.css: {}
