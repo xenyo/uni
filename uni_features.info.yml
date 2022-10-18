@@ -5,7 +5,6 @@ package: Xenyo
 core_version_requirement: ^9 || ^10
 asset_autoload: true
 dependencies:
-  - admin_libraries:admin_libraries
   - admin_toolbar:admin_toolbar
   - asset_autoload:asset_autoload
   - blazy:blazy
