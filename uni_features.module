@@ -1,37 +1,5 @@
 <?php
 
-/**
- * Implements hook_layout_alter().
- */
-function uni_features_layout_alter(&$definitions) {
-  // Remove layout definitions provided by layout_discovery.
-  $definitions = array_filter($definitions, function ($definition) {
-    return $definition->getProvider() !== 'layout_discovery';
-  });
-}
-
-/**
- * Implements hook_form_alter().
- */
-function uni_features_form_alter(&$form, $form_state, $form_id) {
-  switch ($form_id) {
-    case 'layout_paragraphs_component_form':
-      $form['#attached']['library'][] = 'uni_features/layout-paragraphs-component-form';
-      break;
-
-    case 'node_page_form':
-    case 'node_page_edit_form':
-      $form['#attached']['library'][] = 'uni_features/node-page-form';
-      break;
-  }
-}
-
-/**
- * Implements hook_page_attachments().
- */
-function uni_features_page_attachments(&$attachments) {
-  $attachments['#attached']['library'][] = 'uni_features/field-group';
-  $attachments['#attached']['library'][] = 'uni_features/fontawesome';
-  $attachments['#attached']['library'][] = 'uni_features/jquery-ui';
-  $attachments['#attached']['library'][] = 'uni_features/wrapper';
-}
+include 'functions/form_alter.php';
+include 'functions/layout_alter.php';
+include 'functions/page_attachments.php';
