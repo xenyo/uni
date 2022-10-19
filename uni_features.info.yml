@@ -28,7 +28,6 @@ dependencies:
   - no_admin_destination_redirect:no_admin_destination_redirect
   - paragraphs:paragraphs
   - pathauto:pathauto
-  - quick_node_clone:quick_node_clone
   - redirect:redirect
   - select_text_value:select_text_value
   - svg_image_field:svg_image_field
