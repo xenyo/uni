@@ -10,7 +10,6 @@ dependencies:
   - blazy:blazy
   - blazy:blazy_ui
   - block_type_templates:block_type_templates
-  - coffee:coffee
   - coi:coi
   - components:components
   - config_override_core_fields:config_override_core_fields
