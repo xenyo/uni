@@ -6,6 +6,8 @@ core_version_requirement: ^9 || ^10
 asset_autoload: true
 dependencies:
   - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_links_access_filter
+  - admin_toolbar:admin_toolbar_tools
   - asset_autoload:asset_autoload
   - blazy:blazy
   - blazy:blazy_ui
@@ -13,13 +15,24 @@ dependencies:
   - coi:coi
   - components:components
   - config_override_core_fields:config_override_core_fields
+  - config_update:config_update
+  - config_update:config_update_ui
   - devel:devel
+  - drupal:config_translation
+  - drupal:content_translation
+  - drupal:language
+  - drupal:layout_discovery
+  - drupal:locale
+  - drupal:media
+  - drupal:media_library
+  - drupal:responsive_image
   - entity_form_field_label:entity_form_field_label
   - field_group:field_group
   - field_name_prefix_remove:field_name_prefix_remove
   - image_resize_filter:image_resize_filter
   - image_widget_crop:image_widget_crop
   - inline_entity_form:inline_entity_form
+  - language_switcher_extended:language_switcher_extended
   - layout_paragraphs:layout_paragraphs
   - link_attributes:link_attributes
   - media_library_edit:media_library_edit
@@ -31,16 +44,27 @@ dependencies:
   - redirect:redirect
   - select_text_value:select_text_value
   - svg_image_field:svg_image_field
+  - svg_image_field:svg_image_field_media_bundle
   - token:token
+  - toolbar_toggle:toolbar_toggle
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
+  - views_bulk_operations:views_bulk_operations
   - weight:weight
 conflict:
+  - admin_toolbar:admin_toolbar_search
+  - drupal:aggregator
   - drupal:automated_cron
+  - drupal:color
   - drupal:comment
   - drupal:contact
   - drupal:contextual
+  - drupal:hal
   - drupal:history
+  - drupal:layout_builder
+  - drupal:quickedit
+  - drupal:settings_tray
   - drupal:shortcut
   - drupal:tour
+  - drupal:update_manager
