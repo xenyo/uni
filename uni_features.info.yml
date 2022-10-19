@@ -36,3 +36,11 @@ dependencies:
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
   - weight:weight
+conflict:
+  - drupal:automated_cron
+  - drupal:comment
+  - drupal:contact
+  - drupal:contextual
+  - drupal:history
+  - drupal:shortcut
+  - drupal:tour

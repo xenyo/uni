@@ -3,4 +3,5 @@
 include 'functions/form_alter.php';
 include 'functions/layout_alter.php';
 include 'functions/page_attachments.php';
+include 'functions/requirements.php';
 include 'functions/toolbar_alter.php';
