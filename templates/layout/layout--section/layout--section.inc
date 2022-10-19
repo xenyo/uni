@@ -13,7 +13,9 @@ $variables['attributes']['class'][] = 'layout--section';
 $variables['attributes']['class'][] = $style_class;
 
 // Add wrapper classes
-$variables['wrapper_attributes'] = new Attribute(['class' => 'wrapper']);
+$variables['wrapper_attributes'] = new Attribute();
+$variables['wrapper_attributes']->addClass('wrapper');
+$variables['wrapper_attributes']->addClass($style_class);
 
 // Add main region classes
 $variables['region_attributes']['main']->addClass('region');

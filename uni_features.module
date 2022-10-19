@@ -3,3 +3,12 @@
 include 'functions/form_alter.php';
 include 'functions/layout_alter.php';
 include 'functions/page_attachments.php';
+include 'functions/toolbar_alter.php';
+
+function uni_features_js_settings_alter(&$settings) {
+  $settings['toolbar']['breakpoints'] = [
+    'toolbar.narrow' => 'all',
+    'toolbar.standard' => 'all',
+    'toolbar.wide' => 'all',
+  ];
+}

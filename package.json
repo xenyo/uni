@@ -13,10 +13,14 @@
     "@xenyo/parcel-config": "^1.0.0",
     "nodemon": "^2.0.20",
     "parcel": "^2.7.0",
+    "parcel-resolver-ignore": "^2.1.3",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@xenyo/sass-utils": "^1.4.0",
     "underscore": "^1.13.6"
-  }
+  },
+  "parcelIgnore": [
+    "\\.svg$"
+  ]
 }
