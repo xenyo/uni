@@ -65,3 +65,9 @@
     background-position: center 6px !important;
   }
 }
+
+// Normalize dropdown item padding
+.toolbar-tray-horizontal .menu ul li a, .toolbar-tray-horizontal .menu ul .toolbar-icon {
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+}
