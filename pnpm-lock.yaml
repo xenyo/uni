@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@parcel/transformer-sass': ^2.7.0
   '@xenyo/parcel-config': ^1.0.0
-  '@xenyo/sass-utils': ^1.4.0
+  '@xenyo/sass-utils': ^1.5.1
   nodemon: ^2.0.20
   parcel: ^2.7.0
   parcel-resolver-ignore: ^2.1.3
@@ -11,7 +11,7 @@ specifiers:
   underscore: ^1.13.6
 
 dependencies:
-  '@xenyo/sass-utils': 1.4.0
+  '@xenyo/sass-utils': 1.5.1
   underscore: 1.13.6
 
 devDependencies:
@@ -49,7 +49,7 @@ packages:
     resolution: {integrity: sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.10
     dev: true
 
   /@gatsbyjs/parcel-namer-relative-to-cwd/1.9.0_@parcel+core@2.7.0:
@@ -70,7 +70,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.14
-      '@jridgewell/trace-mapping': 0.3.16
+      '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
   /@jridgewell/resolve-uri/3.1.0:
@@ -87,15 +87,15 @@ packages:
     resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.2
-      '@jridgewell/trace-mapping': 0.3.16
+      '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
   /@jridgewell/sourcemap-codec/1.4.14:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
 
-  /@jridgewell/trace-mapping/0.3.16:
-    resolution: {integrity: sha512-LCQ+NeThyJ4k1W2d+vIKdxuSt9R3pQSZ4P92m7EakaYuXcVWbHuT5bjNcqLd4Rdgi6xYWYDvBJZJLZSLanjDcA==}
+  /@jridgewell/trace-mapping/0.3.17:
+    resolution: {integrity: sha512-MCNzAp77qzKca9+W/+I0+sEpaUnZoeasnghNeVc41VZCEKaCH73Vq3BZZ/SzWIgrqE4H4ceI+p+b6C0mHf9T4g==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
@@ -908,7 +908,7 @@ packages:
       browserslist: 4.21.4
       detect-libc: 1.0.3
       nullthrows: 1.1.1
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.10
       semver: 5.7.1
     dev: true
 
@@ -1148,8 +1148,8 @@ packages:
     resolution: {integrity: sha512-B3xVo+dlKM6nnKTcmm5ZtY/OL8bOAOd2Olee9M1zft65ox50OzjEHW91sDiU9j6cvW8Ejg1/Qkf4xd2kugApUA==}
     dependencies:
       '@types/http-cache-semantics': 4.0.1
-      '@types/keyv': 3.1.4
-      '@types/node': 18.8.5
+      '@types/keyv': 4.2.0
+      '@types/node': 18.11.2
       '@types/responselike': 1.0.0
     dev: true
 
@@ -1157,14 +1157,15 @@ packages:
     resolution: {integrity: sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==}
     dev: true
 
-  /@types/keyv/3.1.4:
-    resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
+  /@types/keyv/4.2.0:
+    resolution: {integrity: sha512-xoBtGl5R9jeKUhc8ZqeYaRDx04qqJ10yhhXYGmJ4Jr8qKpvMsDQQrNUvF/wUJ4klOtmJeJM+p2Xo3zp9uaC3tw==}
+    deprecated: This is a stub types definition. keyv provides its own type definitions, so you do not need this installed.
     dependencies:
-      '@types/node': 18.8.5
+      keyv: 4.5.0
     dev: true
 
-  /@types/node/18.8.5:
-    resolution: {integrity: sha512-Bq7G3AErwe5A/Zki5fdD3O6+0zDChhg671NfPjtIcbtzDNZTv4NPKMRFr7gtYPG7y+B8uTiNK4Ngd9T0FTar6Q==}
+  /@types/node/18.11.2:
+    resolution: {integrity: sha512-BWN3M23gLO2jVG8g/XHIRFWiiV4/GckeFIqbU/C4V3xpoBBWSMk4OZomouN0wCkfQFPqgZikyLr7DOYDysIkkw==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1174,7 +1175,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.8.5
+      '@types/node': 18.11.2
     dev: true
 
   /@xenyo/parcel-config/1.0.0_@parcel+core@2.7.0:
@@ -1193,8 +1194,8 @@ packages:
       - uncss
     dev: true
 
-  /@xenyo/sass-utils/1.4.0:
-    resolution: {integrity: sha512-vClZG8FfYDChl9HuGGAx4tGLmZ45BY7beN2XSz6WaLeJu8ivXkuYaeRgUYloNZlxjzCKt3vyS7jc5a8G1pYXzg==}
+  /@xenyo/sass-utils/1.5.1:
+    resolution: {integrity: sha512-62GU/zEswGw+ibF16L+RuGeEGR2sTvg/Yp1vARD1xa73DF8CYtMzfAJ3nyeX5ISZEgRCSWH3/3K0oLFmLKFToA==}
     dev: false
 
   /abbrev/1.1.1:
@@ -1271,8 +1272,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001419
-      electron-to-chromium: 1.4.281
+      caniuse-lite: 1.0.30001421
+      electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
     dev: true
@@ -1304,8 +1305,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001419:
-    resolution: {integrity: sha512-aFO1r+g6R7TW+PNQxKzjITwLOyDhVRLjW0LcwS/HCZGUUKTGNp9+IwLC4xyDSZBygVL/mxaFR3HIV6wEKQuSzw==}
+  /caniuse-lite/1.0.30001421:
+    resolution: {integrity: sha512-Sw4eLbgUJAEhjLs1Fa+mk45sidp1wRn5y6GtDpHGBaNJ9OCDJaVh2tIaWWUnGfuXfKf1JCBaIarak3FkVAvEeA==}
     dev: true
 
   /chalk/2.4.2:
@@ -1525,8 +1526,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /electron-to-chromium/1.4.281:
-    resolution: {integrity: sha512-yer0w5wCYdFoZytfmbNhwiGI/3cW06+RV7E23ln4490DVMxs7PvYpbsrSmAiBn/V6gode8wvJlST2YfWgvzWIg==}
+  /electron-to-chromium/1.4.284:
+    resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
 
   /end-of-stream/1.4.4:
@@ -2309,8 +2310,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /regenerator-runtime/0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+  /regenerator-runtime/0.13.10:
+    resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
     dev: true
 
   /resolve-alpn/1.2.1:
