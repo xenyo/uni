@@ -61,8 +61,11 @@
 
 .toolbar-icon-admin-toolbar-tools-help {
   &::before {
-    background-size: 20px !important;
-    background-position: center 6px !important;
+    padding: 0!important;
+    margin: 0!important;
+    width: auto!important;
+    inset: 0!important;
+    background-size: auto 27px !important;
   }
 }
 
