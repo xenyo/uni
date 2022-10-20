@@ -1,13 +1,12 @@
 <?php
 
-namespace Drupal\uni_features\Styler;
+namespace Drupal\uni_features\OptionHandler;
 
 use Drupal\breakpoint\BreakpointManager;
-use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionInterface {
+abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
 
   protected $breakpointManager;
 
@@ -23,11 +22,17 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
     );
   }
 
-  public function getStyleClass(FieldableEntityInterface $entity): string {
-    return 'style--' . $entity->id();
+  public function preprocess(array &$variables, FieldableEntityInterface $entity): void {
+    $style_class = 'style--' . $entity->id();
+    $styles = $this->build($entity, $style_class);
+
+    $variables['style_class'] = $style_class;
+    $variables['styles'] = $styles;
   }
 
-  public function build(FieldableEntityInterface $entity): array {
+  abstract protected function getStyles(array $values, string $style_class): array;
+
+  protected function build(FieldableEntityInterface $entity, string $style_class): array {
     // 1. Initialize dataset
     $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni_features');
     $dataset = [];
@@ -54,7 +59,6 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
     }
 
     // 3. Add styles
-    $style_class = $this->getStyleClass($entity);
     foreach ($dataset as $suffix => $data) {
       if (!isset($data['fields'])) {
         continue;
@@ -94,8 +98,6 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
 
     return $results;
   }
-
-  abstract protected function getStyles(array $values, string $style_class): array;
 
   protected function sanitizeSelector($selector) {
     return trim(preg_replace('/[\{\}]/', '', $selector));

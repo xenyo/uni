@@ -1,8 +1,8 @@
 <?php
 
-namespace Drupal\uni_features\Styler;
+namespace Drupal\uni_features\OptionHandler;
 
-class SectionStyler extends ResponsiveStyler {
+class SectionOptionHandler extends ResponsiveOptionHandler {
 
   protected function getStyles(array $values, string $style_class): array {
     $style = [];
