@@ -1,7 +1,7 @@
 {
     "name": "xenyo/uni_features",
     "description": "Provides features for Xenyo Uni Framework sites.",
-    "type": "drupal-module",
+    "type": "drupal-custom-module",
     "authors": [
         {
             "name": "Parkle Lee",
