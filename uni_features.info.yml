@@ -50,7 +50,6 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
-  - views_bulk_operations:views_bulk_operations
   - weight:weight
 conflict:
   - admin_toolbar:admin_toolbar_search
