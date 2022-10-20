@@ -1,10 +1,10 @@
 <?php
 
 use Drupal\Core\Template\Attribute;
-use Drupal\uni_features\Styler\LayoutSectionStyler;
+use Drupal\uni_features\Styler\SectionStyler;
 
 $paragraph = $variables['settings']['layout_paragraphs_section']->getEntity();
-$styler = Drupal::classResolver(LayoutSectionStyler::class);
+$styler = Drupal::classResolver(SectionStyler::class);
 $style_class = $styler->getStyleClass($paragraph);
 
 // Add layout classes

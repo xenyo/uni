@@ -2,7 +2,7 @@
 
 namespace Drupal\uni_features\Styler;
 
-class LayoutSectionStyler extends ResponsiveStyler {
+class SectionStyler extends ResponsiveStyler {
 
   protected function getFields(): array {
     return [
