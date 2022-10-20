@@ -1,4 +1,3 @@
 {
-  "extends": "@xenyo/parcel-config",
-  "resolvers": ["parcel-resolver-ignore", "..."]
+  "extends": "@xenyo/parcel-config"
 }
