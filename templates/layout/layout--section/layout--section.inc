@@ -23,4 +23,4 @@ $variables['region_attributes']['main']->addClass('region--main');
 $variables['region_attributes']['main']->addClass($style_class);
 
 // Add style tags
-$variables['styles'] = $styler->getStyleTags($paragraph);
+$variables['styles'] = $styler->build($paragraph);

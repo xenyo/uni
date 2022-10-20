@@ -27,34 +27,49 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
     return 'style--' . $entity->id();
   }
 
-  public function getStyleTags(FieldableEntityInterface $entity): array {
-    $fields = $this->getFields();
+  public function build(FieldableEntityInterface $entity): array {
+    // 1. Initialize dataset
     $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni_features');
-    $styles = [];
+    $dataset = [];
+    foreach ($breakpoints as $breakpoint_name => $breakpoint) {
+      $suffix = explode('.', $breakpoint_name)[1];
+      $dataset[$suffix] = [
+        'breakpoint_name' => $breakpoint_name,
+        'breakpoint' => $breakpoint
+      ];
+    }
 
-    foreach (array_keys($breakpoints) as $breakpoint_id) {
-      $suffix = explode('.', $breakpoint_id)[1];
-      $suffix = $suffix === 'all' ? '' : "_$suffix";
-      $values = [];
-
-      foreach ($fields as $field) {
-        $field_name = $field . $suffix;
-        if ($entity->hasField($field_name) && !$entity->get($field_name)->isEmpty()) {
-          $values[$field] = $entity->get($field_name);
-        }
+    // 2. Add fields
+    $fields = $entity->getFields();
+    $pattern = '/(.*)_(' . implode('|', array_keys($dataset)) . ')$/';
+    foreach ($fields as $field_name => $field) {
+      if ($field->isEmpty()) {
+        continue;
       }
-
-      $style = $this->getStyles($values, $this->getStyleClass($entity));
-      if (!empty($style)) {
-        $styles[$breakpoint_id] = $style;
+      if (preg_match($pattern, $field_name, $matches)) {
+        $dataset[$matches[2]]['fields'][$matches[1]] = $field;
+      } else {
+        $dataset['all']['fields'][$field_name] = $field;
       }
     }
 
-    $results = [];
+    // 3. Add styles
+    $style_class = $this->getStyleClass($entity);
+    foreach ($dataset as $suffix => $data) {
+      if (!isset($data['fields'])) {
+        continue;
+      }
+      $dataset[$suffix]['styles'] = $this->getStyles($data['fields'], $style_class);
+    }
 
-    foreach ($styles as $breakpoint_id => $style) {
+    // 4. Build style tags
+    $results = [];
+    foreach ($dataset as $data) {
       $css = '';
-      foreach ($style as $selector => $properties) {
+      if (!isset($data['styles'])) {
+        continue;
+      }
+      foreach ($data['styles'] as $selector => $properties) {
         $css .= $this->sanitizeSelector($selector) . '{';
         foreach ($properties as $property => $value) {
           $css .= $this->sanitizeProperty($property) . ':';
@@ -62,23 +77,23 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
         }
         $css .= '}';
       }
+      if (empty($css)) {
+        continue;
+      }
       $result = [
         '#type' => 'html_tag',
         '#tag' => 'style',
         '#value' => $css,
       ];
-      $breakpoint = $breakpoints[$breakpoint_id];
-      $media = $breakpoint->getMediaQuery();
+      $media = $data['breakpoint']->getMediaQuery();
       if (!empty($media)) {
         $result['#attributes']['media'] = $media;
       }
-      $results[$breakpoint->getWeight()] = $result;
+      $results[$data['breakpoint']->getWeight()] = $result;
     }
 
     return $results;
   }
-
-  abstract protected function getFields(): array;
 
   abstract protected function getStyles(array $values, string $style_class): array;
 

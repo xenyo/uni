@@ -8,6 +8,6 @@ interface StylerInterface {
 
   public function getStyleClass(FieldableEntityInterface $entity): string;
 
-  public function getStyleTags(FieldableEntityInterface $entity): array;
+  public function build(FieldableEntityInterface $entity): array;
 
 }

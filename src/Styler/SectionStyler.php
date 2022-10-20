@@ -4,25 +4,10 @@ namespace Drupal\uni_features\Styler;
 
 class SectionStyler extends ResponsiveStyler {
 
-  protected function getFields(): array {
-    return [
-      'display',
-      'margin',
-      'margin_directions',
-      'padding',
-      'padding_directions',
-      'wrapper_max_width',
-      'content_display',
-      'grid_columns',
-      'grid_gap',
-    ];
-  }
-
   protected function getStyles(array $values, string $style_class): array {
     $style = [];
 
     // 1. Layout styles
-
     $layout_selector = ".layout--section.$style_class";
 
     if (isset($values['display'])) {
@@ -64,7 +49,6 @@ class SectionStyler extends ResponsiveStyler {
     }
 
     // 2. Wrapper styles
-
     $wrapper_selector = ".wrapper.$style_class";
 
     if (isset($values['wrapper_max_width'])) {
@@ -79,7 +63,6 @@ class SectionStyler extends ResponsiveStyler {
     }
 
     // 3. Content styles
-
     $content_selector = ".region--main.$style_class";
 
     if (isset($values['content_display'])) {
@@ -90,21 +73,31 @@ class SectionStyler extends ResponsiveStyler {
       }
     }
 
+    if (isset($values['grid_auto_columns_min_width'])) {
+      $value = $values['grid_auto_columns_min_width']->getString();
+      $style[$content_selector]['grid-template-columns'] = "repeat(auto-fit, minmax(min($value, 100%), 1fr))!important";
+    }
+
     if (isset($values['grid_columns'])) {
-      $property = 'grid-template-columns';
       $value = $values['grid_columns']->getString();
 
       if (is_numeric($value)) {
-        $style[$content_selector][$property] = "repeat($value, 1fr)!important";
+        $style[$content_selector]['grid-template-columns'] = "repeat($value, 1fr)!important";
       }
       else {
-        $style[$content_selector][$property] = "$value!important";
+        $style[$content_selector]['grid-template-columns'] = "$value!important";
       }
     }
 
-    if (isset($values['grid_gap'])) {
-      $value = $values['grid_gap']->getString();
-      $style[$content_selector]['gap'] = "$value!important";
+    if (isset($values['gap'])) {
+      $value = $values['grid_columns']->getString();
+
+      if (is_numeric($value)) {
+        $style[$content_selector]['grid-template-columns'] = "repeat($value, 1fr)!important";
+      }
+      else {
+        $style[$content_selector]['grid-template-columns'] = "$value!important";
+      }
     }
 
     return $style;
