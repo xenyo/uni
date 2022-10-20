@@ -90,14 +90,18 @@ class SectionStyler extends ResponsiveStyler {
     }
 
     if (isset($values['gap'])) {
-      $value = $values['grid_columns']->getString();
+      $value = $values['gap']->getString();
+      $style[$content_selector]['gap'] = "$value!important";
+    }
 
-      if (is_numeric($value)) {
-        $style[$content_selector]['grid-template-columns'] = "repeat($value, 1fr)!important";
-      }
-      else {
-        $style[$content_selector]['grid-template-columns'] = "$value!important";
-      }
+    if (isset($values['align_items'])) {
+      $value = $values['align_items']->getString();
+      $style[$content_selector]['align-items'] = "$value!important";
+    }
+
+    if (isset($values['justify_content'])) {
+      $value = $values['justify_content']->getString();
+      $style[$content_selector]['justify-content'] = "$value!important";
     }
 
     return $style;

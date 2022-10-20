@@ -65,10 +65,10 @@ abstract class ResponsiveStyler implements StylerInterface, ContainerInjectionIn
     // 4. Build style tags
     $results = [];
     foreach ($dataset as $data) {
-      $css = '';
       if (!isset($data['styles'])) {
         continue;
       }
+      $css = '';
       foreach ($data['styles'] as $selector => $properties) {
         $css .= $this->sanitizeSelector($selector) . '{';
         foreach ($properties as $property => $value) {
