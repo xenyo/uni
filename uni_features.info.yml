@@ -67,3 +67,8 @@ conflict:
   - drupal:shortcut
   - drupal:tour
   - drupal:update_manager
+libraries:
+  - uni_features/field-group
+  - uni_features/fontawesome
+  - uni_features/jquery-ui
+  - uni_features/wrapper
