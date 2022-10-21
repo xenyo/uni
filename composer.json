@@ -38,6 +38,7 @@
         "drupal/field_formatter_class": "^1.5",
         "drupal/field_group": "^3.2",
         "drupal/field_name_prefix_remove": "^1.0",
+        "drupal/image_effects": "^3.4",
         "drupal/image_resize_filter": "^1.1",
         "drupal/image_widget_crop": "^2.3",
         "drupal/inline_entity_form": "^1.0@RC",
