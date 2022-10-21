@@ -1,19 +1,19 @@
-unwrapped:
-  label: Unwrapped
-  category: Uni Features
-  template: templates/layout/layout--section/layout--section
-  regions:
-    main:
-      label: Main content
-  icon_map:
-    - [main]
-
-wrapped:
-  label: Wrapped
-  category: Uni Features
-  template: templates/layout/layout--section/layout--section
+default:
+  label: 01 Default
+  category: Section
+  theme_hook: layout__section
   regions:
     main:
       label: Main content
   icon_map:
     - [left, main, main, right]
+
+basic:
+  label: 02 Basic
+  category: Section
+  theme_hook: layout__section__basic
+  regions:
+    main:
+      label: Main content
+  icon_map:
+    - [main]

@@ -1,10 +1,8 @@
 <div{{ attributes }}>
-  {% if content.main %}
-  {% if layout.id == 'wrapped' %}<div{{ wrapper_attributes }}>{% endif %}
+  <div{{ wrapper_attributes }}>
     <div{{ region_attributes.main }}>
       {{ content.main }}
     </div>
-  {% if layout.id == 'wrapped' %}</div>{% endif %}
-  {% endif %}
+  </div>
   {{ styles }}
 </div>
