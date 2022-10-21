@@ -27,6 +27,7 @@ dependencies:
   - drupal:media_library
   - drupal:responsive_image
   - entity_form_field_label:entity_form_field_label
+  - field_formatter_class:field_formatter_class
   - field_group:field_group
   - field_name_prefix_remove:field_name_prefix_remove
   - image_resize_filter:image_resize_filter
