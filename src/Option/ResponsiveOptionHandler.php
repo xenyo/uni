@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\uni_features\OptionHandler;
+namespace Drupal\uni_features\Option;
 
 use Drupal\breakpoint\BreakpointManager;
 use Drupal\Core\Entity\FieldableEntityInterface;

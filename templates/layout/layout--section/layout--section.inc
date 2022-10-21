@@ -1,7 +1,7 @@
 <?php
 
 use Drupal\Core\Template\Attribute;
-use Drupal\uni_features\OptionHandler\SectionOptionHandler;
+use Drupal\uni_features\Option\SectionOptionHandler;
 
 // Invoke section option handler
 $paragraph = $variables['settings']['layout_paragraphs_section']->getEntity();
