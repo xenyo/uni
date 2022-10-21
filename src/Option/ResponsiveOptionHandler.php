@@ -4,6 +4,7 @@ namespace Drupal\uni_features\Option;
 
 use Drupal\breakpoint\BreakpointManager;
 use Drupal\Core\Entity\FieldableEntityInterface;
+use Drupal\Core\Render\Markup;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
@@ -30,7 +31,7 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
     $variables['styles'] = $styles;
   }
 
-  abstract protected function getStyles(array $values, string $style_class): array;
+  abstract protected function style(array &$dataset, string $style_class): void;
 
   protected function build(FieldableEntityInterface $entity, string $style_class): array {
     // 1. Initialize dataset
@@ -59,12 +60,7 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
     }
 
     // 3. Add styles
-    foreach ($dataset as $suffix => $data) {
-      if (!isset($data['fields'])) {
-        continue;
-      }
-      $dataset[$suffix]['styles'] = $this->getStyles($data['fields'], $style_class);
-    }
+    $this->style($dataset, $style_class);
 
     // 4. Build style tags
     $results = [];
@@ -87,7 +83,7 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
       $result = [
         '#type' => 'html_tag',
         '#tag' => 'style',
-        '#value' => $css,
+        '#value' => Markup::create($css),
       ];
       $media = $data['breakpoint']->getMediaQuery();
       if (!empty($media)) {
@@ -100,15 +96,15 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
   }
 
   protected function sanitizeSelector($selector) {
-    return trim(preg_replace('/[\{\}]/', '', $selector));
+    return strip_tags(trim(preg_replace('/[\{\}]/', '', $selector)));
   }
 
   protected function sanitizeProperty($property) {
-    return trim(preg_replace('/[^a-zA-Z0-9-]/', '', $property));
+    return strip_tags(trim(preg_replace('/[^a-zA-Z0-9-]/', '', $property)));
   }
 
   protected function sanitizeValue($value) {
-    return trim(preg_replace('/[;\{\}]/', '', $value));
+    return strip_tags(trim(preg_replace('/[;\{\}]/', '', $value)));
   }
 
 }
