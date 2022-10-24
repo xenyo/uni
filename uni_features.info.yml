@@ -9,8 +9,6 @@ dependencies:
   - admin_toolbar:admin_toolbar_links_access_filter
   - admin_toolbar:admin_toolbar_tools
   - asset_autoload:asset_autoload
-  - blazy:blazy
-  - blazy:blazy_ui
   - block_type_templates:block_type_templates
   - coi:coi
   - components:components

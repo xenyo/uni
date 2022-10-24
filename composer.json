@@ -27,7 +27,6 @@
     "require": {
         "drupal/admin_toolbar": "^3.1",
         "drupal/asset_autoload": "^1.0",
-        "drupal/blazy": "^2.13",
         "drupal/block_type_templates": "^1.0@alpha",
         "drupal/coi": "^3.0",
         "drupal/components": "^3.0",
