@@ -12,6 +12,7 @@ dependencies:
   - block_type_templates:block_type_templates
   - coi:coi
   - components:components
+  - conditional_fields:conditional_fields
   - config_override_core_fields:config_override_core_fields
   - config_update:config_update
   - config_update:config_update_ui
@@ -72,5 +73,6 @@ conflict:
 libraries:
   - uni_features/field-group
   - uni_features/fontawesome
+  - uni_features/horizontal-tabs
   - uni_features/jquery-ui
   - uni_features/wrapper
