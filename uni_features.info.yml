@@ -35,6 +35,7 @@ dependencies:
   - inline_entity_form:inline_entity_form
   - language_switcher_extended:language_switcher_extended
   - layout_paragraphs:layout_paragraphs
+  - lazy:lazy
   - link_attributes:link_attributes
   - media_library_edit:media_library_edit
   - menu_save_add_another:menu_save_add_another

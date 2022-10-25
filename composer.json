@@ -44,6 +44,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/language_switcher_extended": "^1.0",
         "drupal/layout_paragraphs": "^2.0",
+        "drupal/lazy": "^3.11",
         "drupal/link_attributes": "^1.11",
         "drupal/media_library_edit": "^2.3",
         "drupal/menu_save_add_another": "^1.0",
@@ -60,6 +61,7 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
         "drupal/weight": "^3.3",
+        "npm-asset/lazysizes": "^5.3",
         "xenyo/uni-tools": "^1.0",
         "xenyo/uni_module_template": "^1.0",
         "xenyo/uni_theme_template": "^1.0"
