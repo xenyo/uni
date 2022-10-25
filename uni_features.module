@@ -1,5 +1,6 @@
 <?php
 
+include 'functions/field_group_form_process.php';
 include 'functions/form_alter.php';
 include 'functions/js_settings_alter.php';
 include 'functions/layout_alter.php';
