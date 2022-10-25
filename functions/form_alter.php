@@ -13,6 +13,9 @@ function uni_features_form_alter(&$form, $form_state, $form_id) {
         if (isset($form[$key]['widget'][0]['select'])) {
           $form[$key]['widget'][0]['select']['#empty_option'] = t('- Auto -');
         }
+        if (isset($form[$key]['widget'][0]['field']) && $form[$key]['widget'][0]['field']['#type'] === 'textfield') {
+          $form[$key]['widget'][0]['field']['#size'] = 20;
+        }
       }
       foreach (['', '_lg', '_md', '_sm'] as $suffix) {
         $form["margin_directions$suffix"]['#states'] = [
