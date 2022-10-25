@@ -11,126 +11,165 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
       if (!isset($data['fields'])) {
         continue;
       }
+
       $fields = $data['fields'];
-      $styles = [];
+      $state = array_merge($state, $fields);
+      $dataset[$suffix]['styles'] = $this->computeStyles($fields, $style_class, $state);
+    }
+  }
 
-      // 1. Layout styles
-      $layout_selector = ".layout--section.$style_class";
+  protected function computeStyles($fields, $style_class, $state) {
+    $styles = [];
 
-      if (isset($fields['display'])) {
-        $value = $fields['display']->getString();
+    /**
+     * Selectors
+     */
+    $layout_selector = ".layout--section.$style_class";
+    $wrapper_selector = ".wrapper.$style_class";
+    $content_selector = ".region--main.$style_class";
+    $child_selector = ".region--main.$style_class > .paragraph";
 
-        if (in_array($value, ['block', 'none'])) {
-          $styles[$layout_selector]['display'] = "$value!important";
-        }
+    /**
+     * Display
+     */
+    if (isset($fields['display'])) {
+      $display = $fields['display']->getString();
+
+      if (in_array($display, ['block', 'none'])) {
+        $styles[$layout_selector]['display'] = "$display!important";
       }
+    }
 
-      if (isset($fields['margin'])) {
-        $value = $fields['margin']->getString();
+    /**
+     * Margin
+     */
+    if (isset($fields['margin'])) {
+      $margin = trim($fields['margin']->getString());
 
-        if (isset($fields['margin_directions'])) {
-          foreach ($fields['margin_directions']->getValue() as $direction) {
-            if (in_array($direction['value'], ['top', 'bottom', 'left', 'right'])) {
-              $property = 'margin-' . $direction['value'];
-              $styles[$layout_selector][$property] = "$value!important";
-            }
+      if (strpos($margin, ' ') !== FALSE) {
+        $styles[$layout_selector]['margin'] = "$margin!important";
+      }
+      else if (isset($fields['margin_directions'])) {
+        foreach ($fields['margin_directions']->getValue() as $direction) {
+          if (in_array($direction['value'], ['top', 'bottom', 'left', 'right'])) {
+            $property = 'margin-' . $direction['value'];
+            $styles[$layout_selector][$property] = "$margin!important";
           }
-        } else {
-          $styles[$layout_selector]['margin'] = "$value!important";
         }
       }
+      else {
+        $styles[$layout_selector]['margin'] = "$margin!important";
+      }
+    }
 
-      if (isset($fields['padding'])) {
-        $value = $fields['padding']->getString();
+    /**
+     * Padding
+     */
+    if (isset($fields['padding'])) {
+      $padding = trim($fields['padding']->getString());
 
-        if (isset($fields['padding_directions'])) {
-          foreach ($fields['padding_directions']->getValue() as $direction) {
-            if (in_array($direction['value'], ['top', 'bottom', 'left', 'right'])) {
-              $property = 'padding-' . $direction['value'];
-              $styles[$layout_selector][$property] = "$value!important";
-            }
+      if (strpos($padding, ' ') !== FALSE) {
+        $styles[$layout_selector]['padding'] = "$padding!important";
+      }
+      if (isset($fields['padding_directions'])) {
+        foreach ($fields['padding_directions']->getValue() as $direction) {
+          if (in_array($direction['value'], ['top', 'bottom', 'left', 'right'])) {
+            $property = 'padding-' . $direction['value'];
+            $styles[$layout_selector][$property] = "$padding!important";
           }
-        } else {
-          $styles[$layout_selector]['padding'] = "$value!important";
         }
+      } else {
+        $styles[$layout_selector]['padding'] = "$padding!important";
       }
+    }
 
-      // 2. Wrapper styles
-      $wrapper_selector = ".wrapper.$style_class";
-
-      if (isset($fields['wrapper_max_width'])) {
-        $property = '--wrapper-max-width';
-        $value = $fields['wrapper_max_width']->getString();
-        if (in_array($value, ['narrow', 'full'])) {
-          $styles[$wrapper_selector][$property] = "var(--wrapper-max-width--$value)!important";
-        }
-        else if (is_numeric(substr($value, 0, 1))) {
-          $styles[$wrapper_selector][$property] = "$value!important";
-        }
+    /**
+     * Max width
+     */
+    if (isset($fields['wrapper_max_width'])) {
+      $property = '--wrapper-max-width';
+      $max_width = $fields['wrapper_max_width']->getString();
+      if (in_array($max_width, ['narrow', 'full'])) {
+        $styles[$wrapper_selector][$property] = "var(--wrapper-max-width--$max_width)!important";
       }
-
-      // 3. Content styles
-      $content_selector = ".region--main.$style_class";
-
-      if (isset($fields['content_display'])) {
-        $value = $fields['content_display']->getString();
-
-        if (in_array($value, ['block', 'grid', 'flex'])) {
-          $styles[$content_selector]['display'] = "$value!important";
-        }
+      else if (is_numeric(substr($max_width, 0, 1))) {
+        $styles[$wrapper_selector][$property] = "$max_width!important";
       }
+    }
 
-      if (isset($fields['grid_auto_columns_min_width'])) {
-        $value = $fields['grid_auto_columns_min_width']->getString();
-        $styles[$content_selector]['grid-template-columns'] = "repeat(auto-fit, minmax(min($value, 100%), 1fr))!important";
+    /**
+     * Content display
+     */
+    if (isset($fields['content_display'])) {
+      $display = $fields['content_display']->getString();
+
+      if (in_array($display, ['block', 'grid', 'flex'])) {
+        $styles[$content_selector]['display'] = "$display!important";
       }
+    }
 
-      if (isset($fields['grid_columns'])) {
-        $value = $fields['grid_columns']->getString();
+    /**
+     * Auto columns
+     */
+    if (isset($fields['auto_columns_min_width'])) {
+      $min_width = $fields['auto_columns_min_width']->getString();
+      $styles[$content_selector]['grid-template-columns'] = "repeat(auto-fit, minmax(min($min_width, 100%), 1fr))!important";
+      if (!isset($state['content_display'])) {
+        $styles[$content_selector]['display'] = 'grid!important';
+      }
+    }
 
-        if (is_numeric($value)) {
-          $styles[$content_selector]['grid-template-columns'] = "repeat($value, 1fr)!important";
+    /**
+     * Columns
+     */
+    if (isset($fields['columns'])) {
+      $columns = $fields['columns']->getString();
+      $display = isset($state['content_display']) ? $state['content_display']->getString() : 'grid';
+
+      if ($display === 'grid') {
+        if (is_numeric($columns)) {
+          $styles[$content_selector]['grid-template-columns'] = "repeat($columns, 1fr)!important";
         }
         else {
-          $styles[$content_selector]['grid-template-columns'] = "$value!important";
+          $styles[$content_selector]['grid-template-columns'] = "$columns!important";
+        }
+        if (!isset($state['content_display'])) {
+          $styles[$content_selector]['display'] = 'grid!important';
         }
       }
-
-      if (isset($fields['flex_columns'])) {
-        $value = $fields['flex_columns']->getString();
-
-        if (is_numeric($value)) {
-          $gap = 0;
-
-          if (isset($fields['gap'])) {
-            $gap = $fields['gap']->getString();
-          }
-          else if (isset($state['gap'])) {
-            $gap = $state['gap'];
-          }
-  
-          $styles[$content_selector . ' > *']['width'] = "calc(100% / $value - $gap * ($value - 1) / $value)!important";
-        }
+      else if ($display === 'flex') {
+        $gap = isset($state['gap']) ? $state['gap']->getString() : 0;
+        $styles[$child_selector]['flex-basis'] = "calc(100% / $columns - $gap * ($columns - 1) / $columns)!important";
+        $styles[$child_selector]['box-sizing'] = 'border-box!important';
       }
-
-      if (isset($fields['gap'])) {
-        $value = $fields['gap']->getString();
-        $styles[$content_selector]['gap'] = "$value!important";
-        $state['gap'] = $value;
-      }
-
-      if (isset($fields['align_items'])) {
-        $value = $fields['align_items']->getString();
-        $styles[$content_selector]['align-items'] = "$value!important";
-      }
-
-      if (isset($fields['justify_content'])) {
-        $value = $fields['justify_content']->getString();
-        $styles[$content_selector]['justify-content'] = "$value!important";
-      }
-
-      $dataset[$suffix]['styles'] = $styles;
     }
+
+    /**
+     * Gap
+     */
+    if (isset($fields['gap'])) {
+      $gap = $fields['gap']->getString();
+      $styles[$content_selector]['gap'] = "$gap!important";
+    }
+
+    
+    /**
+     * Justify content
+     */
+    if (isset($fields['justify_content'])) {
+      $justify_content = $fields['justify_content']->getString();
+      $styles[$content_selector]['justify-content'] = "$justify_content!important";
+    }
+
+    /**
+     * Align items
+     */
+    if (isset($fields['align_items'])) {
+      $align_items = $fields['align_items']->getString();
+      $styles[$content_selector]['align-items'] = "$align_items!important";
+    }
+
+    return $styles;
   }
 
 }

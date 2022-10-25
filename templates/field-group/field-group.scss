@@ -1,9 +1,28 @@
+@use 'sass-utils' as *;
+
 .field-group--inline {
   & > .details-wrapper,
   & > .fieldset-wrapper {
-    display: grid;
-    grid: none / repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-flow: wrap;
     column-gap: 15px;
+
+    & > * {
+      width: calc(100% / 4 - 15px * 3 / 4);
+      box-sizing: border-box;
+
+      @include below($md) {
+        width: calc(100% / 2 - 15px * 1 / 2);
+      }
+
+      @include below($sm) {
+        width: 100%;
+      }
+    }
+
+    & > .description {
+      width: 100%;
+    }
   }
 }
 

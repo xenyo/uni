@@ -14,6 +14,29 @@ function uni_features_form_alter(&$form, $form_state, $form_id) {
           $form[$key]['widget'][0]['select']['#empty_option'] = t('- Auto -');
         }
       }
+      foreach (['', '_lg', '_md', '_sm'] as $suffix) {
+        $form["margin_directions$suffix"]['#states'] = [
+          'invisible' => [
+            ":input[name='margin${suffix}[0][select]']" => [
+              'value' => '',
+            ],
+          ],
+        ];
+        $form["padding_directions$suffix"]['#states'] = [
+          'invisible' => [
+            ":input[name='padding${suffix}[0][select]']" => [
+              'value' => '',
+            ],
+          ],
+        ];
+      }
+      $form['wrapper_max_width']['#states'] = [
+        'disabled' => [
+          ':input[name="layout_paragraphs[layout]"][value=basic]' => [
+            'checked' => TRUE,
+          ],
+        ],
+      ];
       break;
 
     case 'node_page_form':
