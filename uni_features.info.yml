@@ -30,6 +30,7 @@ dependencies:
   - field_formatter_class:field_formatter_class
   - field_group:field_group
   - field_name_prefix_remove:field_name_prefix_remove
+  - field_token_value:field_token_value
   - image_effects:image_effects
   - image_resize_filter:image_resize_filter
   - image_widget_crop:image_widget_crop
