@@ -109,17 +109,6 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     }
 
     /**
-     * Auto columns
-     */
-    if (isset($fields['auto_columns_min_width'])) {
-      $min_width = $fields['auto_columns_min_width']->getString();
-      $styles[$content_selector]['grid-template-columns'] = "repeat(auto-fit, minmax(min($min_width, 100%), 1fr))!important";
-      if (!isset($state['content_display'])) {
-        $styles[$content_selector]['display'] = 'grid!important';
-      }
-    }
-
-    /**
      * Columns
      */
     if (isset($fields['columns'])) {
@@ -138,7 +127,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
         }
       }
       else if ($display === 'flex') {
-        $gap = isset($state['gap']) ? $state['gap']->getString() : 0;
+        $gap = "var(--$style_class--gap, 0)";
         $styles[$child_selector]['flex-basis'] = "calc(100% / $columns - $gap * ($columns - 1) / $columns)!important";
         $styles[$child_selector]['box-sizing'] = 'border-box!important';
       }
@@ -149,7 +138,9 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
      */
     if (isset($fields['gap'])) {
       $gap = $fields['gap']->getString();
-      $styles[$content_selector]['gap'] = "$gap!important";
+      $var = "--$style_class--gap";
+      $styles[$content_selector][$var] = "$gap!important";
+      $styles[$content_selector]['gap'] = "var($var)";
     }
 
     
@@ -167,6 +158,17 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     if (isset($fields['align_items'])) {
       $align_items = $fields['align_items']->getString();
       $styles[$content_selector]['align-items'] = "$align_items!important";
+    }
+
+    /**
+     * Auto columns min width
+     */
+    if (isset($fields['auto_columns_min_width'], $state['content_display'])) {
+      $display = $state['content_display']->getString();
+      if ($display === 'grid') {
+        $min_width = $fields['auto_columns_min_width']->getString();
+        $styles[$content_selector]['grid-template-columns'] = "repeat(auto-fit, minmax(min($min_width, 100%), 1fr))!important";
+      }
     }
 
     return $styles;
