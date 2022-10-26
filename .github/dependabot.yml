@@ -12,3 +12,7 @@ updates:
       - xenyo-satis
     schedule:
       interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
