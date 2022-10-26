@@ -71,7 +71,7 @@
         "xenyo/uni_theme_template": "^1.0"
     },
     "suggest": {
-        "xenyo/fontawesome": "^1.0"
+        "xenyo/fontawesome": "^6.0"
     },
     "config": {
         "sort-packages": true
