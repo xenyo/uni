@@ -12,13 +12,13 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
         continue;
       }
 
-      $fields = $data['fields'];
-      $state = array_merge($state, $fields);
-      $dataset[$suffix]['styles'] = $this->computeStyles($fields, $style_class, $state);
+      $state = array_merge($state, $data['fields']);
+      $dataset[$suffix]['styles'] = $this->computeStyles($data, $style_class, $state);
     }
   }
 
-  protected function computeStyles($fields, $style_class, $state) {
+  protected function computeStyles($data, $style_class, $state) {
+    $fields = $data['fields'];
     $styles = [];
 
     /**
@@ -30,7 +30,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     $child_selector = ".region--main.$style_class > .paragraph";
 
     /**
-     * Display
+     * Layout display
      */
     if (isset($fields['display'])) {
       $display = $fields['display']->getString();
@@ -41,7 +41,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     }
 
     /**
-     * Margin
+     * Layout margin
      */
     if (isset($fields['margin'])) {
       $margin = trim($fields['margin']->getString());
@@ -63,7 +63,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     }
 
     /**
-     * Padding
+     * Layout padding
      */
     if (isset($fields['padding'])) {
       $padding = trim($fields['padding']->getString());
@@ -84,7 +84,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
     }
 
     /**
-     * Max width
+     * Wrapper max width
      */
     if (isset($fields['wrapper_max_width'])) {
       $property = '--wrapper-max-width';
@@ -95,6 +95,16 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
       else if (is_numeric(substr($max_width, 0, 1))) {
         $styles[$wrapper_selector][$property] = "$max_width!important";
       }
+    }
+
+    /**
+     * Wrapper padding
+     */
+    if (isset($fields['wrapper_padding'])) {
+      $padding = $fields['wrapper_padding']->getString();
+      $suffix = str_replace('_', '-', $data['suffix']);
+      $property = "--wrapper-padding$suffix";
+      $styles[$wrapper_selector][$property] = "0 $padding!important";
     }
 
     /**

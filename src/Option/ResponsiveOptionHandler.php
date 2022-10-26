@@ -37,11 +37,12 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
     // 1. Initialize dataset
     $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni_features');
     $dataset = [];
-    foreach ($breakpoints as $breakpoint_name => $breakpoint) {
-      $suffix = explode('.', $breakpoint_name)[1];
-      $dataset[$suffix] = [
-        'breakpoint_name' => $breakpoint_name,
-        'breakpoint' => $breakpoint
+    foreach ($breakpoints as $breakpoint_id => $breakpoint) {
+      $breakpoint_name = explode('.', $breakpoint_id)[1];
+      $dataset[$breakpoint_name] = [
+        'breakpoint' => $breakpoint,
+        'breakpoint_id' => $breakpoint_id,
+        'suffix' => $breakpoint->getMediaQuery() === '' ? '' : "_$breakpoint_name",
       ];
     }
 
