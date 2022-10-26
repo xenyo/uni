@@ -72,7 +72,7 @@ conflict:
   - drupal:tour
   - drupal:update_manager
 libraries:
-  - uni_features/field-group
+  - uni_features/cols
   - uni_features/fontawesome
   - uni_features/horizontal-tabs
   - uni_features/jquery-ui

@@ -32,6 +32,13 @@ function uni_features_form_alter(&$form, $form_state, $form_id) {
             ],
           ],
         ];
+        $form["gap_directions$suffix"]['#states'] = [
+          'invisible' => [
+            ":input[name='gap${suffix}[0][select]']" => [
+              'value' => '',
+            ],
+          ],
+        ];
       }
       $form['wrapper_max_width']['#states'] = [
         'disabled' => [

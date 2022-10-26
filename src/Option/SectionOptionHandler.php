@@ -137,7 +137,7 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
         }
       }
       else if ($display === 'flex') {
-        $gap = "var(--$style_class--gap, 0)";
+        $gap = "var(--$style_class--column-gap, 0)";
         $styles[$child_selector]['flex-basis'] = "calc(100% / $columns - $gap * ($columns - 1) / $columns)!important";
         $styles[$child_selector]['box-sizing'] = 'border-box!important';
       }
@@ -147,10 +147,36 @@ class SectionOptionHandler extends ResponsiveOptionHandler {
      * Gap
      */
     if (isset($fields['gap'])) {
-      $gap = $fields['gap']->getString();
-      $var = "--$style_class--gap";
-      $styles[$content_selector][$var] = "$gap!important";
-      $styles[$content_selector]['gap'] = "var($var)";
+      $gap = trim($fields['gap']->getString());
+
+      $var_gap = "--$style_class--gap";
+      $var_row_gap = "--$style_class--row-gap";
+      $var_column_gap = "--$style_class--column-gap";
+
+      if (strpos($gap, ' ') !== FALSE) {
+        $styles[$content_selector][$var_gap] = "$gap!important";
+        $styles[$content_selector]['gap'] = "var($var_gap)!important";
+
+        $gaps = explode(' ', $gap);
+        $styles[$content_selector][$var_row_gap] = $gaps[0] . '!important';
+        $styles[$content_selector][$var_column_gap] = $gaps[1] . '!important';
+      }
+      else if (isset($fields['gap_directions'])) {
+        foreach ($fields['gap_directions']->getValue() as $direction) {
+          if (in_array($direction['value'], ['row', 'column'])) {
+            $property = $direction['value'] . '-gap';
+            $var = "--$style_class--" . $direction['value'] . '-gap';
+            $styles[$content_selector][$var] = "$gap!important";
+            $styles[$content_selector][$property] = "var($var)!important";
+          }
+        }
+      }
+      else {
+        $styles[$content_selector][$var_gap] = "$gap!important";
+        $styles[$content_selector][$var_row_gap] = "$gap!important";
+        $styles[$content_selector][$var_column_gap] = "$gap!important";
+        $styles[$content_selector]['gap'] = "var($var_gap)!important";
+      }
     }
 
     

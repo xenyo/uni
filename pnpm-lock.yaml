@@ -2,20 +2,20 @@ lockfileVersion: 5.4
 
 specifiers:
   '@parcel/transformer-sass': ^2.7.0
-  '@xenyo/parcel-config': ^1.0.0
-  '@xenyo/sass-utils': ^1.5.1
+  '@xenyo/parcel-config': ^1.2.0
+  '@xenyo/sass-utils': ^1.6.0
   nodemon: ^2.0.20
   parcel: ^2.7.0
   rimraf: ^3.0.2
   underscore: ^1.13.6
 
 dependencies:
-  '@xenyo/sass-utils': 1.5.1
+  '@xenyo/sass-utils': 1.6.0
   underscore: 1.13.6
 
 devDependencies:
   '@parcel/transformer-sass': 2.7.0_@parcel+core@2.7.0
-  '@xenyo/parcel-config': 1.0.0_@parcel+core@2.7.0
+  '@xenyo/parcel-config': 1.2.0_@parcel+core@2.7.0
   nodemon: 2.0.20
   parcel: 2.7.0
   rimraf: 3.0.2
@@ -1147,7 +1147,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 4.2.0
-      '@types/node': 18.11.2
+      '@types/node': 18.11.5
       '@types/responselike': 1.0.0
     dev: true
 
@@ -1162,8 +1162,8 @@ packages:
       keyv: 4.5.0
     dev: true
 
-  /@types/node/18.11.2:
-    resolution: {integrity: sha512-BWN3M23gLO2jVG8g/XHIRFWiiV4/GckeFIqbU/C4V3xpoBBWSMk4OZomouN0wCkfQFPqgZikyLr7DOYDysIkkw==}
+  /@types/node/18.11.5:
+    resolution: {integrity: sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1173,11 +1173,11 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.11.2
+      '@types/node': 18.11.5
     dev: true
 
-  /@xenyo/parcel-config/1.0.0_@parcel+core@2.7.0:
-    resolution: {integrity: sha512-SHxLJBaJgZoDdOXH5IfpF27mih/PrsldBXJWBrKigv5vDznV/tITmqgxugF/fASWsFydySBNq3npdUtqHBQtUg==}
+  /@xenyo/parcel-config/1.2.0_@parcel+core@2.7.0:
+    resolution: {integrity: sha512-F46OAKnZjfXN2qpR1prLBJK4+eYxl9fwi40uWA2gzQVnjr+pczYEj2AGeEGJz5QVXTi8MQatVK4zH5GgMC22dQ==}
     dependencies:
       '@gatsbyjs/parcel-namer-relative-to-cwd': 1.9.0_@parcel+core@2.7.0
       '@parcel/config-default': 2.7.0_@parcel+core@2.7.0
@@ -1192,8 +1192,8 @@ packages:
       - uncss
     dev: true
 
-  /@xenyo/sass-utils/1.5.1:
-    resolution: {integrity: sha512-62GU/zEswGw+ibF16L+RuGeEGR2sTvg/Yp1vARD1xa73DF8CYtMzfAJ3nyeX5ISZEgRCSWH3/3K0oLFmLKFToA==}
+  /@xenyo/sass-utils/1.6.0:
+    resolution: {integrity: sha512-0PUAu1mrf8PdC0d0NwnjV+mG3Ootd7T1WcYBqNZ1GPuqaMG9MXWPGnXbBGlleomzzrpGQpo46n9LspjCoJvf/g==}
     dev: false
 
   /abbrev/1.1.1:
@@ -1204,8 +1204,8 @@ packages:
     resolution: {integrity: sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==}
     dev: true
 
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
+  /acorn/8.8.1:
+    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -1270,7 +1270,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001421
+      caniuse-lite: 1.0.30001425
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1303,8 +1303,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001421:
-    resolution: {integrity: sha512-Sw4eLbgUJAEhjLs1Fa+mk45sidp1wRn5y6GtDpHGBaNJ9OCDJaVh2tIaWWUnGfuXfKf1JCBaIarak3FkVAvEeA==}
+  /caniuse-lite/1.0.30001425:
+    resolution: {integrity: sha512-/pzFv0OmNG6W0ym80P3NtapU0QEiDS3VuYAZMGoLLqiC7f6FJFe1MjpQDREGApeenD9wloeytmVDj+JLXPC6qw==}
     dev: true
 
   /chalk/2.4.2:
@@ -2455,7 +2455,7 @@ packages:
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.2
-      acorn: 8.8.0
+      acorn: 8.8.1
       commander: 2.20.3
       source-map-support: 0.5.21
     dev: true

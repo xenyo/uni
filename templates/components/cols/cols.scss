@@ -1,0 +1,30 @@
+@use 'sass-utils' as *;
+
+$breakpoints: (
+  '': null,
+  '-lg': $lg,
+  '-md': $md,
+  '-sm': $sm,
+);
+
+:root {
+  --cols-gap: 0px;
+  --cols-column-gap: var(--cols-gap);
+  --cols-row-gap: var(--cols-gap);
+}
+
+.cols {
+  display: grid;
+  row-gap: var(--cols-row-gap);
+  column-gap: var(--cols-column-gap);
+}
+
+@each $suffix, $breakpoint in $breakpoints {
+  @for $columns from 1 through 4 {
+    .cols#{$suffix}-#{$columns} {
+      @include below($breakpoint) {
+        grid-template-columns: repeat($columns, 1fr);
+      }
+    }
+  }
+}
