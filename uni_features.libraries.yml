@@ -17,3 +17,10 @@ fontawesome-duotone:
   css:
     base:
       /libraries/fontawesome/css/duotone.min.css: {}
+
+swiper:
+  css:
+    base:
+      /libraries/swiper/swiper-bundle.min.css: {}
+  js:
+    /libraries/swiper/swiper-bundle.min.js: {}
