@@ -66,6 +66,7 @@
         "npm-asset/lazysizes": "^5.3",
         "npm-asset/swiper": "^8.4",
         "xenyo/uni-tools": "^1.0",
+        "xenyo/uni_admin": "^1.0",
         "xenyo/uni_module_template": "^1.0",
         "xenyo/uni_theme_template": "^1.0"
     },
