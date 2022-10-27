@@ -16,7 +16,6 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@xenyo/sass-utils": "^1.6.0",
-    "underscore": "^1.13.6"
+    "@xenyo/sass-utils": "^1.6.0"
   }
 }
