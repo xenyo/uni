@@ -7,12 +7,8 @@ registries:
     password: ${{secrets.XENYO_SATIS_PASSWORD}}
 updates:
   - package-ecosystem: "composer"
-    directory: "/" # Location of package manifests
+    directory: "/"
     registries:
       - xenyo-satis
     schedule:
-      interval: "daily"
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
+      interval: "weekly"
