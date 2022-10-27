@@ -26,6 +26,7 @@ dependencies:
   - drupal:media_library
   - drupal:responsive_image
   - easy_breadcrumb:easy_breadcrumb
+  - element_class_formatter:element_class_formatter
   - entity_form_field_label:entity_form_field_label
   - field_formatter_class:field_formatter_class
   - field_group:field_group
