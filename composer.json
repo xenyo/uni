@@ -65,6 +65,7 @@
         "drupal/weight": "^3.3",
         "npm-asset/lazysizes": "^5.3",
         "npm-asset/swiper": "^8.4",
+        "npm-asset/underscore": "^1.13",
         "xenyo/uni-tools": "^1.0",
         "xenyo/uni_admin": "^1.0",
         "xenyo/uni_module_template": "^1.0",
