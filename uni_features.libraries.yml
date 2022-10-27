@@ -24,3 +24,7 @@ swiper:
       /libraries/swiper/swiper-bundle.min.css: {}
   js:
     /libraries/swiper/swiper-bundle.min.js: {}
+
+underscore:
+  js:
+    /libraries/underscore/underscore-min.js: {}
