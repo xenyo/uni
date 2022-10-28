@@ -48,6 +48,7 @@ dependencies:
   - pathauto:pathauto
   - redirect:redirect
   - select_text_value:select_text_value
+  - structure_sync:structure_sync
   - svg_image_field:svg_image_field
   - svg_image_field:svg_image_field_media_bundle
   - token:token
