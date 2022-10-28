@@ -7,13 +7,3 @@ default:
       label: Main content
   icon_map:
     - [left, main, main, right]
-
-basic:
-  label: 02 Basic
-  category: Section
-  theme_hook: layout__section__basic
-  regions:
-    main:
-      label: Main content
-  icon_map:
-    - [main]
