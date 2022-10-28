@@ -4,9 +4,9 @@
   "type": "module",
   "browserslist": "defaults",
   "scripts": {
-    "watch": "rimraf .parcel-cache && nodemon --watch templates --ext mjs,scss --exec \"pnpm compile\"",
+    "watch": "rimraf .parcel-cache && nodemon --watch components --watch templates --ext mjs,scss --exec \"pnpm compile\"",
     "build": "rimraf .parcel-cache && pnpm compile",
-    "compile": "parcel build \"templates/**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash"
+    "compile": "parcel build \"{components,templates}/**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
@@ -16,6 +16,9 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@xenyo/sass-utils": "^1.6.0"
+    "@xenyo/really": "^1.0.2",
+    "@xenyo/sass-utils": "^1.6.0",
+    "swiper": "^8.4.4",
+    "underscore": "^1.13.6"
   }
 }

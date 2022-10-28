@@ -3,13 +3,19 @@ lockfileVersion: 5.4
 specifiers:
   '@parcel/transformer-sass': ^2.7.0
   '@xenyo/parcel-config': ^1.2.0
+  '@xenyo/really': ^1.0.2
   '@xenyo/sass-utils': ^1.6.0
   nodemon: ^2.0.20
   parcel: ^2.7.0
   rimraf: ^3.0.2
+  swiper: ^8.4.4
+  underscore: ^1.13.6
 
 dependencies:
+  '@xenyo/really': 1.0.2
   '@xenyo/sass-utils': 1.6.0
+  swiper: 8.4.4
+  underscore: 1.13.6
 
 devDependencies:
   '@parcel/transformer-sass': 2.7.0_@parcel+core@2.7.0
@@ -1190,6 +1196,11 @@ packages:
       - uncss
     dev: true
 
+  /@xenyo/really/1.0.2:
+    resolution: {integrity: sha512-fD5Oft0ROypy2Ez5tfMColt/ZtOJh5r2wMKWb+8V1eghnN5F7ASobhYE9H/GNjbBTBbsJWQ/kh8LSE4nQdx+Ng==}
+    engines: {node: '>= 16'}
+    dev: false
+
   /@xenyo/sass-utils/1.6.0:
     resolution: {integrity: sha512-0PUAu1mrf8PdC0d0NwnjV+mG3Ootd7T1WcYBqNZ1GPuqaMG9MXWPGnXbBGlleomzzrpGQpo46n9LspjCoJvf/g==}
     dev: false
@@ -1486,6 +1497,12 @@ packages:
       domhandler: 4.3.1
       entities: 2.2.0
     dev: true
+
+  /dom7/4.0.4:
+    resolution: {integrity: sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==}
+    dependencies:
+      ssr-window: 4.0.2
+    dev: false
 
   /domelementtype/2.3.0:
     resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
@@ -2395,6 +2412,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /ssr-window/4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
+    dev: false
+
   /stable/0.1.8:
     resolution: {integrity: sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==}
     deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
@@ -2441,6 +2462,15 @@ packages:
       picocolors: 1.0.0
       stable: 0.1.8
     dev: true
+
+  /swiper/8.4.4:
+    resolution: {integrity: sha512-jA/8BfOZwT8PqPSnMX0TENZYitXEhNa7ZSNj1Diqh5LZyUJoBQaZcqAiPQ/PIg1+IPaRn/V8ZYVb0nxHMh51yw==}
+    engines: {node: '>= 4.7.0'}
+    requiresBuild: true
+    dependencies:
+      dom7: 4.0.4
+      ssr-window: 4.0.2
+    dev: false
 
   /term-size/2.2.1:
     resolution: {integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==}
@@ -2509,6 +2539,10 @@ packages:
   /undefsafe/2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
     dev: true
+
+  /underscore/1.13.6:
+    resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==}
+    dev: false
 
   /unique-string/2.0.0:
     resolution: {integrity: sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg==}

@@ -18,13 +18,18 @@ fontawesome-duotone:
     base:
       /libraries/fontawesome/css/duotone.min.css: {}
 
+really:
+  css:
+    base:
+      libraries/really/really.css: {}
+
 swiper:
   css:
     base:
-      /libraries/swiper/swiper-bundle.min.css: {}
+      libraries/swiper/swiper-bundle.min.css: {}
   js:
-    /libraries/swiper/swiper-bundle.min.js: {}
+    libraries/swiper/swiper-bundle.min.js: {}
 
 underscore:
   js:
-    /libraries/underscore/underscore-min.js: {}
+    libraries/underscore/underscore-min.js: {}
