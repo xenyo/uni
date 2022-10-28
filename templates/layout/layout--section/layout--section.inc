@@ -15,6 +15,12 @@ $variables['attributes']['class'][] = 'layout--section--' . $layout->id();
 // Add wrapper classes
 $variables['wrapper_attributes'] = new Attribute();
 $variables['wrapper_attributes']->addClass('wrapper');
+if ($paragraph->hasField('wrapper_width')) {
+  $field = $paragraph->get('wrapper_width');
+  if (!$field->isEmpty()) {
+    $variables['wrapper_attributes']->addClass('wrapper--' . $field->getString());
+  }
+}
 
 // Add main region classes
 foreach ($variables['region_attributes'] as $region => $attributes) {
