@@ -11,20 +11,25 @@
   box-sizing: border-box;
 
   // The max width of the wrapper including padding
-  max-width: var(--wrapper-max-width);
+  max-width: 1500px;
 
   // The horizontal padding between the parent and the wrapper
-  padding: var(--wrapper-padding);
-
-  @include below($lg) {
-    padding: var(--wrapper-padding-lg, var(--wrapper-padding));
-  }
-
-  @include below($md) {
-    padding: var(--wrapper-padding-md, var(--wrapper-padding-lg, var(--wrapper-padding)));
-  }
+  padding: 0 25px;
 
   @include below($sm) {
-    padding: var(--wrapper-padding-sm, var(--wrapper-padding-md, var(--wrapper-padding-lg, var(--wrapper-padding))));
+    padding: 0 15px;
+  }
+
+  // Variations
+  &--full {
+    max-width: none !important;
+  }
+
+  &--narrow {
+    max-width: 1000px !important;
+  }
+
+  &--extra-narrow {
+    max-width: 500px !important;
   }
 }

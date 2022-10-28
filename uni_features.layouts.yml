@@ -6,4 +6,4 @@ default:
     main:
       label: Main content
   icon_map:
-    - [left, main, main, right]
+    - [main]
