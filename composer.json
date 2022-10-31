@@ -1,5 +1,5 @@
 {
-    "name": "xenyo/uni_features",
+    "name": "xenyo/uni",
     "description": "Provides features for Xenyo Uni Framework sites.",
     "type": "drupal-custom-module",
     "authors": [

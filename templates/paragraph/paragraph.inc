@@ -1,6 +1,6 @@
 <?php
 
-use Drupal\uni_features\Option\AttributeOptionHandler;
+use Drupal\uni\Option\AttributeOptionHandler;
 
 // Invoke attribute option handler
 $paragraph = $variables['paragraph'];

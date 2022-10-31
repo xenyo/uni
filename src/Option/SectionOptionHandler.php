@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\uni_features\Option;
+namespace Drupal\uni\Option;
 
 class SectionOptionHandler extends ResponsiveOptionHandler {
 

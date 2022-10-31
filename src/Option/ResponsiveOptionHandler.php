@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\uni_features\Option;
+namespace Drupal\uni\Option;
 
 use Drupal\breakpoint\BreakpointManager;
 use Drupal\Core\Entity\FieldableEntityInterface;
@@ -35,7 +35,7 @@ abstract class ResponsiveOptionHandler implements OptionHandlerInterface {
 
   protected function build(FieldableEntityInterface $entity, string $style_class): array {
     // 1. Initialize dataset
-    $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni_features');
+    $breakpoints = $this->breakpointManager->getBreakpointsByGroup('uni');
     $dataset = [];
     foreach ($breakpoints as $breakpoint_id => $breakpoint) {
       $breakpoint_name = explode('.', $breakpoint_id)[1];

@@ -1,6 +1,6 @@
 <?php
 
-function uni_features_theme() {
+function uni_theme() {
   return [
     'layout__section' => [
       'template' => 'layout/layout--section/layout--section',

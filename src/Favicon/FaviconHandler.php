@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\uni_features\Favicon;
+namespace Drupal\uni\Favicon;
 
 use Drupal\Core\Extension\ModuleExtensionList;
 use Symfony\Component\DependencyInjection\ContainerInterface;
