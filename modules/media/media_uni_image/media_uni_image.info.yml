@@ -3,15 +3,15 @@ description: 'Provides Uni image media type and related configuration. '
 type: module
 core_version_requirement: '^8.9 || ^9'
 dependencies:
-  - content_translation
-  - crop
-  - entity_form_field_label
-  - field
-  - field_formatter_class
-  - image
-  - image_widget_crop
-  - language
-  - lazy
-  - media
-  - responsive_image
-  - uni
+  - 'crop:crop'
+  - 'drupal:content_translation'
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:media'
+  - 'drupal:responsive_image'
+  - 'entity_form_field_label:entity_form_field_label'
+  - 'field_formatter_class:field_formatter_class'
+  - 'image_widget_crop:image_widget_crop'
+  - 'lazy:lazy'
+  - 'uni:uni'
