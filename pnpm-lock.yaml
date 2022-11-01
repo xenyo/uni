@@ -3,17 +3,17 @@ lockfileVersion: 5.4
 specifiers:
   '@parcel/transformer-sass': ^2.7.0
   '@xenyo/parcel-config': ^1.2.0
-  '@xenyo/really': ^1.0.2
   '@xenyo/sass-utils': ^1.6.0
   nodemon: ^2.0.20
   parcel: ^2.7.0
+  really.css: ^1.1.0
   rimraf: ^3.0.2
   swiper: ^8.4.4
   underscore: ^1.13.6
 
 dependencies:
-  '@xenyo/really': 1.0.2
   '@xenyo/sass-utils': 1.6.0
+  really.css: 1.1.0
   swiper: 8.4.4
   underscore: 1.13.6
 
@@ -47,8 +47,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/runtime/7.19.4:
-    resolution: {integrity: sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==}
+  /@babel/runtime/7.20.0:
+    resolution: {integrity: sha512-NDYdls71fTXoU8TZHfbBWg7DiZfNzClcKui/+kyi6ppD2L1qnWW3VV6CjtaBXSUGGhiTWJ6ereOIkUvenif66Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.10
@@ -58,7 +58,7 @@ packages:
     resolution: {integrity: sha512-N/GUtMxnYgUdn7BeHFQ3iY4A13bN5a7Jfi+kT0fGbfTggMI3XDvIHWRoMfUDcRtUo2D/gL3sQq5gd1k8obye3A==}
     engines: {node: '>=14.15.0', parcel: 2.x}
     dependencies:
-      '@babel/runtime': 7.19.4
+      '@babel/runtime': 7.20.0
       '@parcel/namer-default': 2.6.2_@parcel+core@2.7.0
       '@parcel/plugin': 2.6.2_@parcel+core@2.7.0
       gatsby-core-utils: 3.24.0
@@ -1127,7 +1127,7 @@ packages:
   /@swc/helpers/0.4.12:
     resolution: {integrity: sha512-R6RmwS9Dld5lNvwKlPn62+piU+WDG1sMfsnfJioXCciyko/gZ0DQ4Mqglhq1iGU1nQ/RcGkAwfMH+elMSkJH3Q==}
     dependencies:
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: true
 
   /@szmarczak/http-timer/4.0.6:
@@ -1151,7 +1151,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 4.2.0
-      '@types/node': 18.11.5
+      '@types/node': 18.11.8
       '@types/responselike': 1.0.0
     dev: true
 
@@ -1166,8 +1166,8 @@ packages:
       keyv: 4.5.0
     dev: true
 
-  /@types/node/18.11.5:
-    resolution: {integrity: sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==}
+  /@types/node/18.11.8:
+    resolution: {integrity: sha512-uGwPWlE0Hj972KkHtCDVwZ8O39GmyjfMane1Z3GUBGGnkZ2USDq7SxLpVIiIHpweY9DS0QTDH0Nw7RNBsAAZ5A==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1177,7 +1177,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.11.5
+      '@types/node': 18.11.8
     dev: true
 
   /@xenyo/parcel-config/1.2.0_@parcel+core@2.7.0:
@@ -1195,11 +1195,6 @@ packages:
       - terser
       - uncss
     dev: true
-
-  /@xenyo/really/1.0.2:
-    resolution: {integrity: sha512-fD5Oft0ROypy2Ez5tfMColt/ZtOJh5r2wMKWb+8V1eghnN5F7ASobhYE9H/GNjbBTBbsJWQ/kh8LSE4nQdx+Ng==}
-    engines: {node: '>= 16'}
-    dev: false
 
   /@xenyo/sass-utils/1.6.0:
     resolution: {integrity: sha512-0PUAu1mrf8PdC0d0NwnjV+mG3Ootd7T1WcYBqNZ1GPuqaMG9MXWPGnXbBGlleomzzrpGQpo46n9LspjCoJvf/g==}
@@ -1279,7 +1274,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001425
+      caniuse-lite: 1.0.30001429
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1312,8 +1307,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001425:
-    resolution: {integrity: sha512-/pzFv0OmNG6W0ym80P3NtapU0QEiDS3VuYAZMGoLLqiC7f6FJFe1MjpQDREGApeenD9wloeytmVDj+JLXPC6qw==}
+  /caniuse-lite/1.0.30001429:
+    resolution: {integrity: sha512-511ThLu1hF+5RRRt0zYCf2U2yRr9GPF6m5y90SBCWsvSoYoW7yAGlv/elyPaNfvGCkp6kj/KFZWU0BMA69Prsg==}
     dev: true
 
   /chalk/2.4.2:
@@ -1621,7 +1616,7 @@ packages:
     resolution: {integrity: sha512-P4tbcYOJ1DSYKRP4gIAR9Xta/d/AzjmsK2C6PzX7sNcGnviDKtAIoeV9sE0kNXOqBfUCez25zmAi2cq8NlaxKw==}
     engines: {node: '>=14.15.0'}
     dependencies:
-      '@babel/runtime': 7.19.4
+      '@babel/runtime': 7.20.0
       ci-info: 2.0.0
       configstore: 5.0.1
       fastq: 1.13.0
@@ -2314,6 +2309,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /really.css/1.1.0:
+    resolution: {integrity: sha512-OGTgkIG8rQ4VsweF3z6prp8FNau7+u9qFSGhKLDrhHAjhORcdOoCQbvVYFdDjEcrlOvD+5vh+FegTTV1owjpHQ==}
+    engines: {node: '>= 16'}
+    dev: false
+
   /regenerator-runtime/0.13.10:
     resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
     dev: true
@@ -2521,8 +2521,8 @@ packages:
       nopt: 1.0.10
     dev: true
 
-  /tslib/2.4.0:
-    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+  /tslib/2.4.1:
+    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: true
 
   /type-fest/0.20.2:
