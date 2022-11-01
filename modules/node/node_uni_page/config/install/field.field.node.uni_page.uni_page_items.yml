@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.uni_page_items
+    - node.type.uni_page
+  module:
+    - entity_reference_revisions
+id: node.uni_page.uni_page_items
+field_name: uni_page_items
+entity_type: node
+bundle: uni_page
+label: 'Page content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: paragraph_reverse
+  handler_settings:
+    negate: 1
+    self_field_id: node.uni_page.uni_page_items
+field_type: entity_reference_revisions

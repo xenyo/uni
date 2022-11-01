@@ -1,0 +1,12 @@
+name: 'Uni media'
+description: 'Provides Uni media paragraphs type and related configuration. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - entity_form_field_label
+  - field
+  - media
+  - media_library
+  - media_library_edit
+  - paragraphs
+  - paragraphs_selection

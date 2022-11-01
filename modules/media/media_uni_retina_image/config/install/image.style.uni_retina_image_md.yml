@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.uni_custom
+  module:
+    - crop
+    - image_effects
+name: uni_retina_image_md
+label: 'Uni retina image md'
+effects:
+  e9994c9c-74cf-46dc-8daa-1156ab5e4c39:
+    uuid: e9994c9c-74cf-46dc-8daa-1156ab5e4c39
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: uni_custom
+      automatic_crop_provider: null
+  70a62a8d-bc97-4fec-a889-f0d8cdce71b2:
+    uuid: 70a62a8d-bc97-4fec-a889-f0d8cdce71b2
+    id: image_effects_resize_percentage
+    weight: 2
+    data:
+      width: 50%
+      height: ''
+  c724b7dc-5690-4c9c-a85b-27c5d88b8daa:
+    uuid: c724b7dc-5690-4c9c-a85b-27c5d88b8daa
+    id: image_scale
+    weight: 3
+    data:
+      width: 1000
+      height: null
+      upscale: false

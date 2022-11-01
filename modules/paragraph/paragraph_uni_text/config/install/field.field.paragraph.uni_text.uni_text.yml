@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.uni_text
+    - paragraphs.paragraphs_type.uni_text
+  module:
+    - text
+id: paragraph.uni_text.uni_text
+field_name: uni_text
+entity_type: paragraph
+bundle: uni_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

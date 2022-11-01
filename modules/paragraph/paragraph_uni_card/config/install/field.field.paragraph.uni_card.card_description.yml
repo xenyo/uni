@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.card_description
+    - paragraphs.paragraphs_type.uni_card
+  module:
+    - text
+id: paragraph.uni_card.card_description
+field_name: card_description
+entity_type: paragraph
+bundle: uni_card
+label: 'Card description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

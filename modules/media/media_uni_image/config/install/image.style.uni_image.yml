@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.uni_custom
+  module:
+    - crop
+name: uni_image
+label: 'Uni image'
+effects:
+  8d335e95-3b44-46a1-8deb-14565c03deac:
+    uuid: 8d335e95-3b44-46a1-8deb-14565c03deac
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: uni_custom
+      automatic_crop_provider: null
+  58fde4f4-c7d9-4018-a85e-ce184c7c5ced:
+    uuid: 58fde4f4-c7d9-4018-a85e-ce184c7c5ced
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: null
+      upscale: false

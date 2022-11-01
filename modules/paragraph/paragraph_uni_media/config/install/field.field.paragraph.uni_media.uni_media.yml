@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.uni_media
+    - media.type.uni_image
+    - media.type.uni_retina_image
+    - media.type.vector_image
+    - media.type.video
+    - paragraphs.paragraphs_type.uni_media
+id: paragraph.uni_media.uni_media
+field_name: uni_media
+entity_type: paragraph
+bundle: uni_media
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      uni_image: uni_image
+      uni_retina_image: uni_retina_image
+      vector_image: vector_image
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: uni_retina_image
+field_type: entity_reference

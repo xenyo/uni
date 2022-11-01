@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: uni_page
+label: 'Uni page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  d4a877b4-f21a-424a-8a28-0212882eef99:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d4a877b4-f21a-424a-8a28-0212882eef99
+    context_mapping:
+      node: node
+    bundles:
+      uni_page: uni_page
+selection_logic: and
+weight: -5
+relationships: {  }

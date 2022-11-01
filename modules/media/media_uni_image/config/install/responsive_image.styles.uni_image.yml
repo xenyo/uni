@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.uni_image
+    - image.style.uni_image_lg
+    - image.style.uni_image_sm
+  module:
+    - uni
+id: uni_image
+label: 'Uni image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_sm
+    breakpoint_id: uni.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_sm
+    breakpoint_id: uni.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_lg
+    breakpoint_id: uni.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image
+    breakpoint_id: uni.all
+    multiplier: 1x
+breakpoint_group: uni
+fallback_image_style: uni_image_sm

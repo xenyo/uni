@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.uni_custom
+  module:
+    - crop
+name: uni_retina_image_lg_2x
+label: 'Uni retina image lg 2x'
+effects:
+  6c5b8261-2efd-46c0-9e4b-066a36948197:
+    uuid: 6c5b8261-2efd-46c0-9e4b-066a36948197
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: uni_custom
+      automatic_crop_provider: null
+  31d57edb-1d03-4ab8-8716-4ff6e2301f5d:
+    uuid: 31d57edb-1d03-4ab8-8716-4ff6e2301f5d
+    id: image_scale
+    weight: 2
+    data:
+      width: 3000
+      height: null
+      upscale: false

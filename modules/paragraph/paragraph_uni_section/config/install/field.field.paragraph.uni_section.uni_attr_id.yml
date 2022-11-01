@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.uni_attr_id
+    - paragraphs.paragraphs_type.uni_section
+id: paragraph.uni_section.uni_attr_id
+field_name: uni_attr_id
+entity_type: paragraph
+bundle: uni_section
+label: ID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

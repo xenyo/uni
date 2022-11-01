@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uni_media.uni_media
+    - paragraphs.paragraphs_type.uni_media
+id: paragraph.uni_media.default
+targetEntityType: paragraph
+bundle: uni_media
+mode: default
+content:
+  uni_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

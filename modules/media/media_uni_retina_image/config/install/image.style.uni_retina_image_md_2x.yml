@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.uni_custom
+  module:
+    - crop
+name: uni_retina_image_md_2x
+label: 'Uni retina image md 2x'
+effects:
+  e9f265e1-3d1c-4277-8e52-b64312ba6f37:
+    uuid: e9f265e1-3d1c-4277-8e52-b64312ba6f37
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: uni_custom
+      automatic_crop_provider: null
+  9ce6524f-9952-4bf3-9afe-8b38148213f3:
+    uuid: 9ce6524f-9952-4bf3-9afe-8b38148213f3
+    id: image_scale
+    weight: 2
+    data:
+      width: 2000
+      height: null
+      upscale: false

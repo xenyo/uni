@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.uni_margin_top_0
+    - paragraphs.paragraphs_type.uni_section
+id: paragraph.uni_section.uni_margin_top_0
+field_name: uni_margin_top_0
+entity_type: paragraph
+bundle: uni_section
+label: 'Remove top margin'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
