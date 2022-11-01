@@ -54,6 +54,7 @@
         "drupal/metatag": "^1.21",
         "drupal/no_admin_destination_redirect": "^2.1",
         "drupal/paragraphs": "^1.15",
+        "drupal/paragraphs_selection": "^2.0",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
         "drupal/select_text_value": "^1.2",

@@ -45,6 +45,7 @@ dependencies:
   - metatag:metatag
   - no_admin_destination_redirect:no_admin_destination_redirect
   - paragraphs:paragraphs
+  - paragraphs_selection:paragraphs_selection
   - pathauto:pathauto
   - redirect:redirect
   - select_text_value:select_text_value
