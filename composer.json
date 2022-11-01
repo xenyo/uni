@@ -8,14 +8,6 @@
             "email": "parkle.lee@xenyo.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "drupal/admin_toolbar": "^3.1",
         "drupal/asset_autoload": "^1.0",
@@ -58,8 +50,5 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
         "drupal/weight": "^3.3"
-    },
-    "config": {
-        "sort-packages": true
     }
 }
