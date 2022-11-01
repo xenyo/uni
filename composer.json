@@ -11,10 +11,6 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.xenyo.net"
-        },
-        {
-            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
@@ -61,14 +57,7 @@
         "drupal/twig_tools": "^1.4",
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
-        "drupal/weight": "^3.3",
-        "xenyo/uni-tools": "^1.0",
-        "xenyo/uni_admin": "^1.0",
-        "xenyo/uni_module_template": "^1.0",
-        "xenyo/uni_theme_template": "^1.0"
-    },
-    "suggest": {
-        "xenyo/fontawesome": "^6.0"
+        "drupal/weight": "^3.3"
     },
     "config": {
         "sort-packages": true
