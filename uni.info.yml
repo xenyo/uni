@@ -1,5 +1,5 @@
-name: Uni
-description: Provides features for Xenyo Uni Frameworks sites.
+name: Xenyo Uni Framework
+description: Main module for Xenyo Uni Framework.
 type: module
 package: Xenyo
 core_version_requirement: ^9 || ^10
@@ -44,8 +44,8 @@ dependencies:
   - menu_save_add_another:menu_save_add_another
   - metatag:metatag
   - no_admin_destination_redirect:no_admin_destination_redirect
-  - paragraphs:paragraphs
   - paragraphs_selection:paragraphs_selection
+  - paragraphs:paragraphs
   - pathauto:pathauto
   - redirect:redirect
   - select_text_value:select_text_value
@@ -57,6 +57,7 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
+  - uni_features:uni_features
   - weight:weight
 conflict:
   - admin_toolbar:admin_toolbar_search
