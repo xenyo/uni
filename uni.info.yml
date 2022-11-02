@@ -76,3 +76,6 @@ conflicts:
   - drupal:shortcut
   - drupal:tour
   - drupal:update_manager
+components:
+  namespaces:
+    components: components
