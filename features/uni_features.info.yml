@@ -3,11 +3,11 @@ description: Installs features for Xenyo Uni Framework.
 type: module
 core_version_requirement: ^9 || ^10
 dependencies:
-  - media_uni_image:media_uni_image
-  - media_uni_retina_image:media_uni_retina_image
-  - node_uni_page:node_uni_page
-  - paragraph_uni_card:paragraph_uni_card
-  - paragraph_uni_media:paragraph_uni_media
-  - paragraph_uni_section:paragraph_uni_section
-  - paragraph_uni_text:paragraph_uni_text
-  - uni_core:uni_core
+  - uni:media_uni_image
+  - uni:media_uni_retina_image
+  - uni:node_uni_page
+  - uni:paragraph_uni_card
+  - uni:paragraph_uni_media
+  - uni:paragraph_uni_section
+  - uni:paragraph_uni_text
+  - uni:uni_core

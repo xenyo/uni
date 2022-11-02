@@ -58,7 +58,7 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
-  - uni_features:uni_features
+  - uni:uni_features
   - weight:weight
 conflicts:
   - admin_toolbar:admin_toolbar_search
