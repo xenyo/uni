@@ -14,6 +14,7 @@
         "drupal/block_type_templates": "^1.0@alpha",
         "drupal/coi": "^3.0",
         "drupal/components": "^3.0",
+        "drupal/config_split": "^1.9",
         "drupal/conditional_fields": "^4.0",
         "drupal/config_override_core_fields": "^3.0",
         "drupal/easy_breadcrumb": "^2.0",
