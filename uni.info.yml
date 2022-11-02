@@ -17,6 +17,7 @@ dependencies:
   - config_split:config_split
   - config_update:config_update
   - config_update:config_update_ui
+  - dependency_status:dependency_status
   - drupal:config_translation
   - drupal:content_translation
   - drupal:language
