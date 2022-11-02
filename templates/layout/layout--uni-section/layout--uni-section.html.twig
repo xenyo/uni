@@ -1,11 +1,11 @@
 <div{{ attributes }}>
-  {% if not paragraph.disable_wrapper.value %}
+  {% if not paragraph.uni_wrapper_disable.value %}
   <div{{ wrapper_attributes }}>
     {% endif %}
     <div{{ region_attributes.main }}>
       {{ content.main }}
     </div>
-  {% if not paragraph.disable_wrapper.value %}
+  {% if not paragraph.uni_wrapper_disable.value %}
   </div>
   {% endif %}
 </div>

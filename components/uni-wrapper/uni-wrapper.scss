@@ -1,6 +1,6 @@
 @use "sass-utils" as *;
 
-.wrapper {
+.uni-wrapper {
   // Horizontally center the wrapper in the parent
   margin: 0 auto;
 
@@ -21,15 +21,11 @@
   }
 
   // Variations
-  &--full {
-    max-width: none !important;
+  &.uni-wrapper--full {
+    max-width: none;
   }
 
-  &--narrow {
-    max-width: 1000px !important;
-  }
-
-  &--extra-narrow {
-    max-width: 500px !important;
+  &.uni-wrapper--narrow {
+    max-width: 1000px;
   }
 }

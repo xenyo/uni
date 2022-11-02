@@ -14,11 +14,11 @@ $variables['attributes']['class'][] = 'layout--uni-section--' . $layout->id();
 
 // Add wrapper classes
 $variables['wrapper_attributes'] = new Attribute();
-$variables['wrapper_attributes']->addClass('wrapper');
+$variables['wrapper_attributes']->addClass('uni-wrapper');
 if ($paragraph->hasField('wrapper_width')) {
-  $field = $paragraph->get('wrapper_width');
-  if (!$field->isEmpty()) {
-    $variables['wrapper_attributes']->addClass('wrapper--' . $field->getString());
+  $wrapper_width = $paragraph->get('wrapper_width')->getString();
+  if (!empty($wrapper_width)) {
+    $variables['wrapper_attributes']->addClass("wrapper--$wrapper_width");
   }
 }
 
