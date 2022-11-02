@@ -16,7 +16,6 @@ dependencies:
   - config_override_core_fields:config_override_core_fields
   - config_update:config_update
   - config_update:config_update_ui
-  - devel:devel
   - drupal:config_translation
   - drupal:content_translation
   - drupal:language
