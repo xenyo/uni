@@ -59,7 +59,7 @@ dependencies:
   - twigsuggest:twigsuggest
   - uni_features:uni_features
   - weight:weight
-conflict:
+conflicts:
   - admin_toolbar:admin_toolbar_search
   - drupal:aggregator
   - drupal:automated_cron
