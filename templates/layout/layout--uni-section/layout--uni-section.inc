@@ -9,8 +9,8 @@ $variables['paragraph'] = $paragraph;
 // Add layout classes
 $layout = $variables['layout'];
 $variables['attributes']['class'][] = 'layout';
-$variables['attributes']['class'][] = 'layout--section';
-$variables['attributes']['class'][] = 'layout--section--' . $layout->id();
+$variables['attributes']['class'][] = 'layout--uni-section';
+$variables['attributes']['class'][] = 'layout--uni-section--' . $layout->id();
 
 // Add wrapper classes
 $variables['wrapper_attributes'] = new Attribute();

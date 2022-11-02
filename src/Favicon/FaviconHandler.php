@@ -2,10 +2,11 @@
 
 namespace Drupal\uni\Favicon;
 
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Extension\ModuleExtensionList;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class FaviconHandler implements FaviconHandlerInterface {
+class FaviconHandler implements FaviconHandlerInterface, ContainerInjectionInterface {
 
   protected $moduleExtensionList;
 

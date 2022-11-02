@@ -3,26 +3,21 @@
 namespace Drupal\uni\Option;
 
 use Drupal\Core\Entity\FieldableEntityInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class AttributeOptionHandler implements OptionHandlerInterface {
 
-  public static function create(ContainerInterface $container) {
-    return new static();
-  }
-
   public function preprocess(array &$variables, FieldableEntityInterface $entity): void {
-    if ($entity->hasField('attribute_id')) {
-      $value = $entity->get('attribute_id')->getString();
-      if (!empty($value)) {
-        $variables['attributes']['id'] = $value;
+    if ($entity->hasField('uni_attr_id')) {
+      $attr_id = $entity->get('uni_attr_id')->getString();
+      if (!empty($attr_id)) {
+        $variables['attributes']['id'] = $attr_id;
       }
     }
 
-    if ($entity->hasField('attribute_class')) {
-      $value = $entity->get('attribute_class')->getString();
-      if (!empty($value)) {
-        $variables['attributes']['class'][] = $value;
+    if ($entity->hasField('uni_attr_class')) {
+      $attr_class = $entity->get('uni_attr_class')->getString();
+      if (!empty($attr_class)) {
+        $variables['attributes']['class'][] = $attr_class;
       }
     }
   }
