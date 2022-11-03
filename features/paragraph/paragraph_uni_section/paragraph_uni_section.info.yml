@@ -3,10 +3,11 @@ description: 'Provides Uni section paragraphs type and related configuration. '
 type: module
 core_version_requirement: '^8.9 || ^9'
 dependencies:
-  - entity_form_field_label
-  - field
-  - field_group
-  - layout_paragraphs
-  - paragraphs
-  - paragraphs_selection
-  - select_text_value
+  - 'drupal:field'
+  - 'entity_form_field_label:entity_form_field_label'
+  - 'field_group:field_group'
+  - 'layout_paragraphs:layout_paragraphs'
+  - 'paragraph_uni_section:paragraph_uni_section'
+  - 'paragraphs:paragraphs'
+  - 'paragraphs_selection:paragraphs_selection'
+  - 'select_text_value:select_text_value'

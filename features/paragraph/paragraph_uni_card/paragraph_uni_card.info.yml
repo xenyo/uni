@@ -3,15 +3,18 @@ description: 'Provides Uni card paragraphs type and related configuration. '
 type: module
 core_version_requirement: '^8.9 || ^9'
 dependencies:
-  - element_class_formatter
-  - entity_form_field_label
-  - field
-  - field_formatter_class
-  - link
-  - media
-  - media_library
-  - media_library_edit
-  - node
-  - paragraphs
-  - paragraphs_selection
-  - text
+  - 'drupal:field'
+  - 'drupal:link'
+  - 'drupal:media'
+  - 'drupal:media_library'
+  - 'drupal:node'
+  - 'drupal:text'
+  - 'element_class_formatter:element_class_formatter'
+  - 'entity_form_field_label:entity_form_field_label'
+  - 'field_formatter_class:field_formatter_class'
+  - 'media_library_edit:media_library_edit'
+  - 'media_uni_image:media_uni_image'
+  - 'media_uni_retina_image:media_uni_retina_image'
+  - 'paragraph_uni_card:paragraph_uni_card'
+  - 'paragraphs:paragraphs'
+  - 'paragraphs_selection:paragraphs_selection'

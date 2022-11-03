@@ -14,4 +14,6 @@ dependencies:
   - 'field_formatter_class:field_formatter_class'
   - 'image_widget_crop:image_widget_crop'
   - 'lazy:lazy'
+  - 'media_uni_image:media_uni_image'
   - 'uni:uni'
+  - 'uni_core:uni_core'
