@@ -58,7 +58,13 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
-  - uni:uni_features
+  - uni:media_uni_image
+  - uni:media_uni_retina_image
+  - uni:node_uni_page
+  - uni:paragraph_uni_card
+  - uni:paragraph_uni_media
+  - uni:paragraph_uni_section
+  - uni:paragraph_uni_text
   - weight:weight
 conflicts:
   - admin_toolbar:admin_toolbar_search
