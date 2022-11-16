@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph.uni_media.uni_media
     - paragraphs.paragraphs_type.uni_media
   module:
-    - entity_form_field_label
     - media_library
     - media_library_edit
 id: paragraph.uni_media.default
@@ -24,9 +23,6 @@ content:
         - vector_image
         - video
     third_party_settings:
-      entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
       media_library_edit:
         show_edit: '1'
 hidden:

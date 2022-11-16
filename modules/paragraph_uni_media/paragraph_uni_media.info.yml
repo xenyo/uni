@@ -1,4 +1,19 @@
 name: 'Uni media'
 description: 'Provides Uni media paragraphs type and related configuration. '
 type: module
+package: Uni
 core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - media_library_edit:media_library_edit
+  - paragraphs:paragraphs
+  - uni:media_uni_image
+  - uni:media_uni_retina_image
+config_devel:
+  install:
+    - core.entity_form_display.paragraph.uni_media.default
+    - core.entity_view_display.paragraph.uni_media.default
+    - field.field.paragraph.uni_media.uni_media
+    - field.storage.paragraph.uni_media
+    - paragraphs.paragraphs_type.uni_media
