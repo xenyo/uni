@@ -1,5 +1,0 @@
-excluded:
-  - core.entity_form_display.node.uni_page.default
-  - core.entity_view_display.node.uni_page.default
-  - core.entity_view_display.node.uni_page.uni_card
-required: true
