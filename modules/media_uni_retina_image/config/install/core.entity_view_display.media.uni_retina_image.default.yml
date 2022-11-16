@@ -6,8 +6,6 @@ dependencies:
     - media.type.uni_retina_image
     - responsive_image.styles.uni_retina_image
   module:
-    - entity_form_field_label
-    - field_formatter_class
     - lazy
     - responsive_image
 id: media.uni_retina_image.default
@@ -22,11 +20,6 @@ content:
       responsive_image_style: uni_retina_image
       image_link: ''
     third_party_settings:
-      entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
-      field_formatter_class:
-        class: ''
       lazy:
         lazy_image: '1'
         placeholder_style: uni_retina_image_sm

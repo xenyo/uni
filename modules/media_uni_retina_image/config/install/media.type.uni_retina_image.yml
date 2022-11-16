@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - crop
+  enforced:
+    module:
+      - media_uni_retina_image
 third_party_settings:
   crop:
     image_field: _none

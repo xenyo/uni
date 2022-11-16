@@ -4,7 +4,7 @@ type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'
 dependencies:
-  - crop
+  - crop:crop
   - drupal:content_translation
   - drupal:image
   - drupal:responsive_image

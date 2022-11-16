@@ -6,6 +6,9 @@ dependencies:
   module:
     - crop
     - image_effects
+  enforced:
+    module:
+      - media_uni_retina_image
 name: uni_retina_image
 label: 'Uni retina image'
 effects:

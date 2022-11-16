@@ -5,6 +5,9 @@ dependencies:
     - crop.type.uni_custom
   module:
     - crop
+  enforced:
+    module:
+      - media_uni_retina_image
 name: uni_retina_image_sm_2x
 label: 'Uni retina image sm 2x'
 effects:
