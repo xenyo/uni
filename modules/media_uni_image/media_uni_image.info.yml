@@ -21,7 +21,6 @@ config_devel:
     - image.style.uni_image_md
     - image.style.uni_image_sm
     - image.style.uni_image
+    - language.content_settings.media.uni_image
     - media.type.uni_image
     - responsive_image.styles.uni_image
-  optional:
-    - language.content_settings.media.uni_image
