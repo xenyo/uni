@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.uni_page.uni_page_thumbnail
     - node.type.uni_page
   module:
-    - entity_form_field_label
     - field_group
     - layout_paragraphs
     - media_library
@@ -117,10 +116,7 @@ content:
       nesting_depth: 3
       require_layouts: 1
       empty_message: ''
-    third_party_settings:
-      entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
+    third_party_settings: {  }
   uni_page_thumbnail:
     type: media_library_widget
     weight: 15
@@ -130,9 +126,6 @@ content:
         - uni_image
         - uni_retina_image
     third_party_settings:
-      entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
       media_library_edit:
         show_edit: '1'
   url_redirects:
