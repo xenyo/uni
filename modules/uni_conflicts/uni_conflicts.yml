@@ -1,0 +1,23 @@
+name: Uni Conflicts
+description: Provides a list of modules that are not recommended to be used with Xenyo Uni Framework.
+type: module
+package: Xenyo
+core_version_requirement: ^9 || ^10
+dependencies:
+  - dependency_status:dependency_status
+conflicts:
+  - admin_toolbar:admin_toolbar_search
+  - drupal:aggregator
+  - drupal:automated_cron
+  - drupal:color
+  - drupal:comment
+  - drupal:contact
+  - drupal:contextual
+  - drupal:hal
+  - drupal:history
+  - drupal:layout_builder
+  - drupal:quickedit
+  - drupal:settings_tray
+  - drupal:shortcut
+  - drupal:tour
+  - drupal:update_manager

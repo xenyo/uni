@@ -5,6 +5,9 @@ dependencies:
     - crop.type.uni_custom
   module:
     - crop
+  enforced:
+    module:
+      - media_uni_image
 name: uni_image
 label: 'Uni image'
 effects:

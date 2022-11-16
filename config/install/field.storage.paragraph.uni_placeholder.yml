@@ -4,6 +4,9 @@ dependencies:
   module:
     - field_token_value
     - paragraphs
+  enforced:
+    module:
+      - uni
 id: paragraph.uni_placeholder
 field_name: uni_placeholder
 entity_type: paragraph

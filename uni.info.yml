@@ -1,80 +1,13 @@
-name: Xenyo Uni Framework
+name: Uni
 description: Main module for Xenyo Uni Framework.
 type: module
-package: Xenyo
+package: Uni
 core_version_requirement: ^9 || ^10
 asset_autoload: true
-dependencies:
-  - admin_toolbar:admin_toolbar
-  - admin_toolbar:admin_toolbar_links_access_filter
-  - admin_toolbar:admin_toolbar_tools
-  - asset_autoload:asset_autoload
-  - block_type_templates:block_type_templates
-  - coi:coi
-  - components:components
-  - conditional_fields:conditional_fields
-  - config_override_core_fields:config_override_core_fields
-  - config_split:config_split
-  - config_update:config_update
-  - config_update:config_update_ui
-  - dependency_status:dependency_status
-  - drupal:config_translation
-  - drupal:content_translation
-  - drupal:language
-  - drupal:layout_discovery
-  - drupal:locale
-  - drupal:media
-  - drupal:media_library
-  - drupal:responsive_image
-  - easy_breadcrumb:easy_breadcrumb
-  - element_class_formatter:element_class_formatter
-  - entity_form_field_label:entity_form_field_label
-  - field_formatter_class:field_formatter_class
-  - field_group:field_group
-  - field_name_prefix_remove:field_name_prefix_remove
-  - field_token_value:field_token_value
-  - image_effects:image_effects
-  - image_resize_filter:image_resize_filter
-  - image_widget_crop:image_widget_crop
-  - inline_entity_form:inline_entity_form
-  - language_switcher_extended:language_switcher_extended
-  - layout_paragraphs:layout_paragraphs
-  - lazy:lazy
-  - link_attributes:link_attributes
-  - media_library_edit:media_library_edit
-  - menu_save_add_another:menu_save_add_another
-  - metatag:metatag
-  - no_admin_destination_redirect:no_admin_destination_redirect
-  - paragraphs_selection:paragraphs_selection
-  - paragraphs:paragraphs
-  - pathauto:pathauto
-  - redirect:redirect
-  - select_text_value:select_text_value
-  - structure_sync:structure_sync
-  - svg_image_field:svg_image_field
-  - svg_image_field:svg_image_field_media_bundle
-  - token:token
-  - toolbar_toggle:toolbar_toggle
-  - twig_tools:twig_tools
-  - twig_tweak:twig_tweak
-  - twigsuggest:twigsuggest
-  - weight:weight
-conflicts:
-  - admin_toolbar:admin_toolbar_search
-  - drupal:aggregator
-  - drupal:automated_cron
-  - drupal:color
-  - drupal:comment
-  - drupal:contact
-  - drupal:contextual
-  - drupal:hal
-  - drupal:history
-  - drupal:layout_builder
-  - drupal:quickedit
-  - drupal:settings_tray
-  - drupal:shortcut
-  - drupal:tour
-  - drupal:update_manager
 components:
   namespaces:
     components: components
+config_devel:
+  install:
+    - crop.type.uni_custom
+    - field.storage.paragraph.uni_placeholder

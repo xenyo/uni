@@ -1,4 +1,27 @@
 name: 'Uni image'
 description: 'Provides Uni image media type and related configuration. '
 type: module
+package: Uni
 core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - crop
+  - drupal:content_translation
+  - drupal:image
+  - drupal:responsive_image
+  - image_widget_crop:image_widget_crop
+  - lazy:lazy
+  - uni:uni
+config_devel:
+  install:
+    - core.entity_form_display.media.uni_image.default
+    - core.entity_view_display.media.uni_image.default
+    - core.entity_view_display.media.uni_image.media_library
+    - field.field.media.uni_image.field_media_image
+    - image.style.uni_image_lg
+    - image.style.uni_image_md
+    - image.style.uni_image_sm
+    - image.style.uni_image
+    - media.type.uni_image
+    - responsive_image.styles.uni_image
+  optional:
+    - language.content_settings.media.uni_image

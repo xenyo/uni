@@ -1,0 +1,34 @@
+name: Uni Contrib
+description: Installs essential contrib modules for Xenyo Uni Framework.
+type: module
+package: Xenyo
+core_version_requirement: ^9 || ^10
+dependencies:
+  - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_links_access_filter
+  - admin_toolbar:admin_toolbar_tools
+  - asset_autoload:asset_autoload
+  - block_type_templates:block_type_templates
+  - coi:coi
+  - components:components
+  - config_override_core_fields:config_override_core_fields
+  - config_split:config_split
+  - config_update:config_update
+  - config_update:config_update_ui
+  - dependency_status:dependency_status
+  - easy_breadcrumb:easy_breadcrumb
+  - field_name_prefix_remove:field_name_prefix_remove
+  - image_resize_filter:image_resize_filter
+  - language_switcher_extended:language_switcher_extended
+  - link_attributes:link_attributes
+  - menu_save_add_another:menu_save_add_another
+  - metatag:metatag
+  - no_admin_destination_redirect:no_admin_destination_redirect
+  - pathauto:pathauto
+  - redirect:redirect
+  - structure_sync:structure_sync
+  - token:token
+  - toolbar_toggle:toolbar_toggle
+  - twig_tools:twig_tools
+  - twig_tweak:twig_tweak
+  - twigsuggest:twigsuggest
