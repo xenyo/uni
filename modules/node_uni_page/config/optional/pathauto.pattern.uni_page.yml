@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - node_uni_page
 id: uni_page
 label: 'Uni page'
 type: 'canonical_entities:node'

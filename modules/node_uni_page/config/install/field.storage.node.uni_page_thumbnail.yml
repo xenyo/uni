@@ -4,6 +4,9 @@ dependencies:
   module:
     - media
     - node
+  enforced:
+    module:
+      - node_uni_page
 id: node.uni_page_thumbnail
 field_name: uni_page_thumbnail
 entity_type: node

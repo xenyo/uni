@@ -5,6 +5,9 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+  enforced:
+    module:
+      - node_uni_page
 id: node.uni_page_items
 field_name: uni_page_items
 entity_type: node

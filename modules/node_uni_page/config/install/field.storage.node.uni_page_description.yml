@@ -4,6 +4,9 @@ dependencies:
   module:
     - node
     - text
+  enforced:
+    module:
+      - node_uni_page
 id: node.uni_page_description
 field_name: uni_page_description
 entity_type: node
