@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - paragraphs
+  enforced:
+    module:
+      - paragraph_uni_card
 id: paragraph.card_title
 field_name: card_title
 entity_type: paragraph

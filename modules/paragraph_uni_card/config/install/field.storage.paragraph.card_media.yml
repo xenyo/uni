@@ -4,6 +4,9 @@ dependencies:
   module:
     - media
     - paragraphs
+  enforced:
+    module:
+      - paragraph_uni_card
 id: paragraph.card_media
 field_name: card_media
 entity_type: paragraph

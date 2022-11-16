@@ -1,4 +1,28 @@
 name: 'Uni card'
 description: 'Provides Uni card paragraphs type and related configuration. '
 type: module
+package: Uni
 core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - drupal:link
+  - drupal:media
+  - drupal:media_library
+  - drupal:text
+  - element_class_formatter:element_class_formatter
+  - media_library_edit:media_library_edit
+  - paragraphs:paragraphs
+  - paragraphs_selection:paragraphs_selection
+  - uni:uni
+config_devel:
+  install:
+    - core.entity_form_display.paragraph.uni_card.default
+    - core.entity_view_display.paragraph.uni_card.default
+    - field.field.paragraph.uni_card.card_description
+    - field.field.paragraph.uni_card.card_link
+    - field.field.paragraph.uni_card.card_media
+    - field.field.paragraph.uni_card.card_title
+    - field.storage.paragraph.card_description
+    - field.storage.paragraph.card_link
+    - field.storage.paragraph.card_media
+    - field.storage.paragraph.card_title
+    - paragraphs.paragraphs_type.uni_card

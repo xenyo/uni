@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - uni
 id: node.uni_card
 label: 'Uni card'
 targetEntityType: node

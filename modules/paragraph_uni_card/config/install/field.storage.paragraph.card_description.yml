@@ -4,6 +4,9 @@ dependencies:
   module:
     - paragraphs
     - text
+  enforced:
+    module:
+      - paragraph_uni_card
 id: paragraph.card_description
 field_name: card_description
 entity_type: paragraph
