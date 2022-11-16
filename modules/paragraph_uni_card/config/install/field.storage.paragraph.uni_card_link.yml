@@ -7,8 +7,8 @@ dependencies:
   enforced:
     module:
       - paragraph_uni_card
-id: paragraph.card_link
-field_name: card_link
+id: paragraph.uni_card_link
+field_name: uni_card_link
 entity_type: paragraph
 type: link
 settings: {  }

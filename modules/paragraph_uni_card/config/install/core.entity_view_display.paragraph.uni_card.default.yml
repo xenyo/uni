@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.uni_card.card_description
-    - field.field.paragraph.uni_card.card_link
-    - field.field.paragraph.uni_card.card_media
-    - field.field.paragraph.uni_card.card_title
+    - field.field.paragraph.uni_card.uni_card_description
+    - field.field.paragraph.uni_card.uni_card_link
+    - field.field.paragraph.uni_card.uni_card_media
+    - field.field.paragraph.uni_card.uni_card_title
     - paragraphs.paragraphs_type.uni_card
   module:
     - element_class_formatter
@@ -16,14 +16,14 @@ targetEntityType: paragraph
 bundle: uni_card
 mode: default
 content:
-  card_description:
+  uni_card_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
-  card_link:
+  uni_card_link:
     type: link
     label: hidden
     settings:
@@ -35,7 +35,7 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  card_media:
+  uni_card_media:
     type: entity_reference_entity_view
     label: hidden
     settings:
@@ -44,7 +44,7 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  card_title:
+  uni_card_title:
     type: wrapper_class
     label: hidden
     settings:

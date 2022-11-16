@@ -6,8 +6,8 @@ dependencies:
   enforced:
     module:
       - paragraph_uni_card
-id: paragraph.card_title
-field_name: card_title
+id: paragraph.uni_card_title
+field_name: uni_card_title
 entity_type: paragraph
 type: string
 settings:

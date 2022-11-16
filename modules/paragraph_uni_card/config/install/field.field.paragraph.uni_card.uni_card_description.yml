@@ -2,21 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.card_link
+    - field.storage.paragraph.uni_card_description
     - paragraphs.paragraphs_type.uni_card
   module:
-    - link
-id: paragraph.uni_card.card_link
-field_name: card_link
+    - text
+id: paragraph.uni_card.uni_card_description
+field_name: uni_card_description
 entity_type: paragraph
 bundle: uni_card
-label: 'Card link'
+label: 'Card description'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  title: 1
-  link_type: 17
-field_type: link
+settings: {  }
+field_type: text_long

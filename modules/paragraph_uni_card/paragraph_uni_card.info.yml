@@ -12,17 +12,19 @@ dependencies:
   - media_library_edit:media_library_edit
   - paragraphs:paragraphs
   - paragraphs_selection:paragraphs_selection
+  - uni:media_uni_image
+  - uni:media_uni_retina_image
   - uni:uni
 config_devel:
   install:
     - core.entity_form_display.paragraph.uni_card.default
     - core.entity_view_display.paragraph.uni_card.default
-    - field.field.paragraph.uni_card.card_description
-    - field.field.paragraph.uni_card.card_link
-    - field.field.paragraph.uni_card.card_media
-    - field.field.paragraph.uni_card.card_title
-    - field.storage.paragraph.card_description
-    - field.storage.paragraph.card_link
-    - field.storage.paragraph.card_media
-    - field.storage.paragraph.card_title
+    - field.field.paragraph.uni_card.uni_card_description
+    - field.field.paragraph.uni_card.uni_card_link
+    - field.field.paragraph.uni_card.uni_card_media
+    - field.field.paragraph.uni_card.uni_card_title
+    - field.storage.paragraph.uni_card_description
+    - field.storage.paragraph.uni_card_link
+    - field.storage.paragraph.uni_card_media
+    - field.storage.paragraph.uni_card_title
     - paragraphs.paragraphs_type.uni_card

@@ -7,8 +7,8 @@ dependencies:
   enforced:
     module:
       - paragraph_uni_card
-id: paragraph.card_media
-field_name: card_media
+id: paragraph.uni_card_media
+field_name: uni_card_media
 entity_type: paragraph
 type: entity_reference
 settings:
