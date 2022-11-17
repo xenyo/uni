@@ -5,7 +5,6 @@ package: Uni
 core_version_requirement: '^8.9 || ^9'
 dependencies:
   - drupal:text
-  - paragraphs_selection:paragraphs_selection
   - paragraphs:paragraphs
 config_devel:
   install:

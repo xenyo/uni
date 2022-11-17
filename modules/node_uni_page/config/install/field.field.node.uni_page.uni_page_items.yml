@@ -4,6 +4,10 @@ dependencies:
   config:
     - field.storage.node.uni_page_items
     - node.type.uni_page
+    - paragraphs.paragraphs_type.uni_card
+    - paragraphs.paragraphs_type.uni_media
+    - paragraphs.paragraphs_type.uni_section
+    - paragraphs.paragraphs_type.uni_text
   module:
     - entity_reference_revisions
 id: node.uni_page.uni_page_items
@@ -17,8 +21,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: paragraph_reverse
+  handler: paragraphs_simple_selection
   handler_settings:
-    negate: 0
-    self_field_id: node.uni_page.uni_page_items
+    target_bundles:
+      uni_card: uni_card
+      uni_media: uni_media
+      uni_section: uni_section
+      uni_text: uni_text
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: 0
+    auto_create_bundle: uni_card
 field_type: entity_reference_revisions
