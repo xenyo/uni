@@ -7,30 +7,11 @@ dependencies:
     - field.field.node.uni_page.uni_page_thumbnail
     - node.type.uni_page
   module:
-    - field_group
     - layout_paragraphs
     - media_library
     - media_library_edit
     - path
     - text
-third_party_settings:
-  field_group:
-    group_summary:
-      children:
-        - uni_page_thumbnail
-        - uni_page_description
-      label: 'Page summary'
-      region: content
-      parent_name: ''
-      weight: 3
-      format_type: details
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        open: false
-        description: ''
-        required_fields: false
 id: node.uni_page.default
 targetEntityType: node
 bundle: uni_page
@@ -38,40 +19,40 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 4
+    weight: 5
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -85,13 +66,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -101,7 +82,7 @@ content:
     third_party_settings: {  }
   uni_page_description:
     type: text_textarea
-    weight: 16
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -109,7 +90,7 @@ content:
     third_party_settings: {  }
   uni_page_items:
     type: layout_paragraphs
-    weight: 2
+    weight: 1
     region: content
     settings:
       preview_view_mode: preview
@@ -119,7 +100,7 @@ content:
     third_party_settings: {  }
   uni_page_thumbnail:
     type: media_library_widget
-    weight: 15
+    weight: 2
     region: content
     settings:
       media_types:
@@ -129,7 +110,7 @@ content:
       media_library_edit:
         show_edit: '1'
   url_redirects:
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }

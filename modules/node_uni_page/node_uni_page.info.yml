@@ -10,7 +10,6 @@ dependencies:
   - drupal:text
   - drupal:user
   - entity_reference_revisions:entity_reference_revisions
-  - field_group:field_group
   - layout_paragraphs:layout_paragraphs
   - media_library_edit:media_library_edit
   - media_library:media_library
