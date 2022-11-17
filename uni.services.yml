@@ -1,0 +1,5 @@
+services:
+  uni.favicon_handler:
+    class: Drupal\uni\FaviconHandler
+    arguments:
+      - '@extension.list.module'
