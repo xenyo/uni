@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - paragraphs_selection
+  enforced:
+    module:
+      - paragraph_uni_text
 third_party_settings:
   paragraphs_selection:
     fields:

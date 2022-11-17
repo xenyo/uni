@@ -1,4 +1,16 @@
 name: 'Uni text'
 description: 'Provides Uni text paragraphs type and related configuration. '
 type: module
+package: Uni
 core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - drupal:text
+  - paragraphs_selection:paragraphs_selection
+  - paragraphs:paragraphs
+config_devel:
+  install:
+    - core.entity_form_display.paragraph.uni_text.default
+    - core.entity_view_display.paragraph.uni_text.default
+    - field.field.paragraph.uni_text.uni_text
+    - field.storage.paragraph.uni_text
+    - paragraphs.paragraphs_type.uni_text
