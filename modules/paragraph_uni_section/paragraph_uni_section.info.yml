@@ -1,4 +1,14 @@
 name: 'Uni section'
 description: 'Provides Uni section paragraphs type and related configuration. '
 type: module
+package: Uni
 core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - layout_paragraphs:layout_paragraphs
+  - paragraphs_selection:paragraphs_selection
+  - paragraphs:paragraphs
+config_devel:
+  install:
+    - core.entity_form_display.paragraph.uni_section.default
+    - core.entity_view_display.paragraph.uni_section.default
+    - paragraphs.paragraphs_type.uni_section

@@ -1,9 +1,9 @@
-default:
-  label: 01 Default
-  category: Section
-  theme_hook: layout__uni_section
+uni_default:
+  label: 1. Default
+  category: Uni
+  template: templates/layout/layout--uni-default
   regions:
     main:
       label: Main content
   icon_map:
-    - [main]
+    - [padding, main, main, main, main, padding]

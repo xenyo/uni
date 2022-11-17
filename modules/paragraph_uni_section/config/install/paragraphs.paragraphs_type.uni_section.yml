@@ -4,6 +4,9 @@ dependencies:
   module:
     - layout_paragraphs
     - paragraphs_selection
+  enforced:
+    module:
+      - paragraph_uni_section
 third_party_settings:
   paragraphs_selection:
     fields:
@@ -19,4 +22,4 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      default: '01 Default'
+      uni_default: '1. Default'
