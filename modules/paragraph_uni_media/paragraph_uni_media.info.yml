@@ -10,6 +10,7 @@ dependencies:
   - paragraphs:paragraphs
   - uni:media_uni_image
   - uni:media_uni_retina_image
+  - uni:uni
 config_devel:
   install:
     - core.entity_form_display.paragraph.uni_media.default
