@@ -6,7 +6,10 @@ core_version_requirement: '^8.9 || ^9'
 dependencies:
   - crop:crop
   - drupal:content_translation
+  - drupal:field
   - drupal:image
+  - drupal:language
+  - drupal:media
   - drupal:responsive_image
   - image_widget_crop:image_widget_crop
   - lazy:lazy

@@ -4,6 +4,7 @@ type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'
 dependencies:
+  - drupal:field
   - drupal:link
   - drupal:media
   - drupal:media_library
