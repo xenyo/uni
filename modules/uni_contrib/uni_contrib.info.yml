@@ -1,7 +1,7 @@
-name: Uni Contrib
+name: Uni contrib
 description: Installs essential contrib modules for Xenyo Uni Framework.
 type: module
-package: Xenyo
+package: Uni
 core_version_requirement: ^9 || ^10
 dependencies:
   - admin_toolbar:admin_toolbar
