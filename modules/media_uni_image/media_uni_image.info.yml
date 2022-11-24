@@ -11,6 +11,7 @@ dependencies:
   - drupal:language
   - drupal:media
   - drupal:responsive_image
+  - image_effects
   - image_widget_crop:image_widget_crop
   - lazy:lazy
   - uni:uni

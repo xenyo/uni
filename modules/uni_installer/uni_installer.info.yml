@@ -1,0 +1,14 @@
+name: Uni installer
+description: Installs all available modules provided by Xenyo Uni Framework.
+type: module
+package: Uni
+core_version_requirement: ^9 || ^10
+dependencies:
+  - uni:media_uni_image
+  - uni:media_uni_retina_image
+  - uni:paragraph_uni_card
+  - uni:paragraph_uni_media
+  - uni:paragraph_uni_section
+  - uni:paragraph_uni_text
+  - uni:uni
+  - uni:uni_contrib
