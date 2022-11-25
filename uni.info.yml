@@ -10,7 +10,6 @@ conflicts:
   - drupal:aggregator
   - drupal:automated_cron
   - drupal:color
-  - drupal:comment
   - drupal:contact
   - drupal:contextual
   - drupal:hal
@@ -18,7 +17,6 @@ conflicts:
   - drupal:layout_builder
   - drupal:quickedit
   - drupal:settings_tray
-  - drupal:shortcut
   - drupal:tour
   - drupal:update_manager
 asset_autoload: true
