@@ -6,6 +6,7 @@ core_version_requirement: ^9 || ^10
 dependencies:
   - uni:media_uni_image
   - uni:media_uni_retina_image
+  - uni:node_uni_page
   - uni:paragraph_uni_card
   - uni:paragraph_uni_media
   - uni:paragraph_uni_section
