@@ -4,8 +4,8 @@
   "type": "module",
   "browserslist": "defaults",
   "scripts": {
-    "watch": "rimraf .parcel-cache && nodemon --watch components --watch templates --ext mjs,scss --exec \"pnpm compile\"",
-    "build": "rimraf .parcel-cache && pnpm compile",
+    "watch": "rimraf .parcel-cache && nodemon --watch components --watch templates --ext mjs,scss --exec \"npm run compile\"",
+    "build": "rimraf .parcel-cache && npm run compile",
     "compile": "parcel build \"{components,templates}/**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash"
   },
   "devDependencies": {
