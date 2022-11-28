@@ -7,3 +7,13 @@ uni_default:
       label: Main content
   icon_map:
     - [padding, main, main, main, main, padding]
+
+uni_full_width:
+  label: 2. Full width
+  category: Uni
+  template: templates/layout/layout--uni-full-width
+  regions:
+    main:
+      label: Main content
+  icon_map:
+    - [ main ]

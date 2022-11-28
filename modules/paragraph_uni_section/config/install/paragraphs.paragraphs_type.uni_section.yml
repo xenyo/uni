@@ -16,3 +16,4 @@ behavior_plugins:
     enabled: true
     available_layouts:
       uni_default: '1. Default'
+      uni_full_width: '2. Full width'
