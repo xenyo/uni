@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.uni_custom
+  module:
+    - crop
+name: uni_image_lg_2x
+label: 'Uni image lg 2x'
+effects:
+  caae5f46-0130-474b-91df-069d8cd7f779:
+    uuid: caae5f46-0130-474b-91df-069d8cd7f779
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: uni_custom
+      automatic_crop_provider: null
+  e57cbbf5-34ee-4422-a321-216de551ffa2:
+    uuid: e57cbbf5-34ee-4422-a321-216de551ffa2
+    id: image_scale
+    weight: 2
+    data:
+      width: 3000
+      height: null
+      upscale: false

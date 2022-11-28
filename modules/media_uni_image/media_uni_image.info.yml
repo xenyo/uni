@@ -21,10 +21,14 @@ config_devel:
     - core.entity_view_display.media.uni_image.default
     - core.entity_view_display.media.uni_image.media_library
     - field.field.media.uni_image.field_media_image
-    - image.style.uni_image_lg
-    - image.style.uni_image_md
-    - image.style.uni_image_sm
     - image.style.uni_image
+    - image.style.uni_image_2x
+    - image.style.uni_image_lg
+    - image.style.uni_image_lg_2x
+    - image.style.uni_image_md
+    - image.style.uni_image_md_2x
+    - image.style.uni_image_sm
+    - image.style.uni_image_sm_2x
     - language.content_settings.media.uni_image
     - media.type.uni_image
     - responsive_image.styles.uni_image

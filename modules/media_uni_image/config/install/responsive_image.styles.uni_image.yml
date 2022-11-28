@@ -3,8 +3,13 @@ status: true
 dependencies:
   config:
     - image.style.uni_image
+    - image.style.uni_image_2x
     - image.style.uni_image_lg
+    - image.style.uni_image_lg_2x
+    - image.style.uni_image_md
+    - image.style.uni_image_md_2x
     - image.style.uni_image_sm
+    - image.style.uni_image_sm_2x
   module:
     - uni
   enforced:
@@ -20,9 +25,19 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: uni_image_sm
+    image_mapping: uni_image_sm_2x
+    breakpoint_id: uni.sm
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_md
     breakpoint_id: uni.md
     multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_md_2x
+    breakpoint_id: uni.md
+    multiplier: 2x
   -
     image_mapping_type: image_style
     image_mapping: uni_image_lg
@@ -30,8 +45,18 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
+    image_mapping: uni_image_lg_2x
+    breakpoint_id: uni.lg
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
     image_mapping: uni_image
     breakpoint_id: uni.all
     multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: uni_image_2x
+    breakpoint_id: uni.all
+    multiplier: 2x
 breakpoint_group: uni
 fallback_image_style: uni_image_sm
