@@ -2,10 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.uni_section.uni_html_class
     - paragraphs.paragraphs_type.uni_section
 id: paragraph.uni_section.default
 targetEntityType: paragraph
 bundle: uni_section
 mode: default
 content: {  }
-hidden: {  }
+hidden:
+  uni_html_class: true

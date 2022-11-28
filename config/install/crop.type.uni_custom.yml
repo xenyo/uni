@@ -4,8 +4,8 @@ dependencies:
   enforced:
     module:
       - uni
-label: 'Uni custom'
 id: uni_custom
+label: 'Uni custom'
 description: ''
 aspect_ratio: ''
 soft_limit_width: null

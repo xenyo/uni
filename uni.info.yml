@@ -27,4 +27,5 @@ config_devel:
   install:
     - core.entity_view_mode.node.uni_card
     - crop.type.uni_custom
+    - field.storage.paragraph.uni_html_class
     - field.storage.paragraph.uni_placeholder
