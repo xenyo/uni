@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.paragraph.uni_card_media
     - media.type.uni_image
-    - media.type.uni_retina_image
     - paragraphs.paragraphs_type.uni_card
 id: paragraph.uni_card.uni_card_media
 field_name: uni_card_media
@@ -21,7 +20,6 @@ settings:
   handler_settings:
     target_bundles:
       uni_image: uni_image
-      uni_retina_image: uni_retina_image
     sort:
       field: _none
       direction: ASC

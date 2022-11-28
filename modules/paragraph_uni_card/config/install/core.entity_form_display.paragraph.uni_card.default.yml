@@ -40,7 +40,6 @@ content:
     settings:
       media_types:
         - uni_image
-        - uni_retina_image
     third_party_settings:
       media_library_edit:
         show_edit: '1'

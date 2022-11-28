@@ -18,7 +18,6 @@ dependencies:
   - paragraphs_simple_selection:paragraphs_simple_selection
   - paragraphs:paragraphs
   - uni:media_uni_image
-  - uni:media_uni_retina_image
   - uni:paragraph_uni_card
   - uni:paragraph_uni_media
   - uni:paragraph_uni_section

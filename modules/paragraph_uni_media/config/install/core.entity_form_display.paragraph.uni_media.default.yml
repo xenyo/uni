@@ -19,7 +19,6 @@ content:
     settings:
       media_types:
         - uni_image
-        - uni_retina_image
         - vector_image
         - video
     third_party_settings:

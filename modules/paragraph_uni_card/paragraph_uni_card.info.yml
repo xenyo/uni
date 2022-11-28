@@ -13,7 +13,6 @@ dependencies:
   - media_library_edit:media_library_edit
   - paragraphs:paragraphs
   - uni:media_uni_image
-  - uni:media_uni_retina_image
   - uni:uni
 config_devel:
   install:
