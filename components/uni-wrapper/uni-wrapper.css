@@ -1,2 +1,2 @@
-.uni-wrapper{width:100%;box-sizing:border-box;max-width:1500px;margin:0 auto;padding:0 25px}@media (max-width:499.98px){.uni-wrapper{padding:0 15px}}.uni-wrapper.uni-wrapper--full{max-width:none}.uni-wrapper.uni-wrapper--narrow{max-width:1000px}
+.uni-wrapper{width:100%;box-sizing:border-box;max-width:1500px;margin:0 auto;padding:0 25px}@media (max-width:499.98px){.uni-wrapper{padding:0 15px}}.uni-wrapper.uni-wrapper--full-width{max-width:none;padding:0}
 /*# sourceMappingURL=uni-wrapper.css.map */

@@ -21,11 +21,8 @@
   }
 
   // Variations
-  &.uni-wrapper--full {
+  &.uni-wrapper--full-width {
     max-width: none;
-  }
-
-  &.uni-wrapper--narrow {
-    max-width: 1000px;
+    padding: 0;
   }
 }
