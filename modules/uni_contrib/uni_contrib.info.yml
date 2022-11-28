@@ -26,7 +26,9 @@ dependencies:
   - no_admin_destination_redirect:no_admin_destination_redirect
   - pathauto:pathauto
   - redirect:redirect
+  - select2_all:select2_all
   - structure_sync:structure_sync
+  - taxonomy_import:taxonomy_import
   - token:token
   - toolbar_toggle:toolbar_toggle
   - twig_tools:twig_tools
