@@ -1,0 +1,12 @@
+name: Uni HTML class
+description: Provides Uni HTML class taxonomy vocabulary and related configuration.
+type: module
+package: Uni
+core_version_requirement: ^8.9 || ^9
+dependencies:
+  - drupal:taxonomy
+  - drupal:language
+config_devel:
+  install:
+    - language.content_settings.taxonomy_term.uni_html_class
+    - taxonomy.vocabulary.uni_html_class

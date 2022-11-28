@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.uni_html_class
+id: taxonomy_term.uni_html_class
+target_entity_type_id: taxonomy_term
+target_bundle: uni_html_class
+default_langcode: site_default
+language_alterable: false
