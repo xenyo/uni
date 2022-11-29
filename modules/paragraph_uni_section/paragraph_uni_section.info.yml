@@ -13,4 +13,6 @@ config_devel:
     - core.entity_form_display.paragraph.uni_section.default
     - core.entity_view_display.paragraph.uni_section.default
     - field.field.paragraph.uni_section.uni_html_class
+    - field.field.paragraph.uni_section.uni_section_width
+    - field.storage.paragraph.uni_section_width
     - paragraphs.paragraphs_type.uni_section

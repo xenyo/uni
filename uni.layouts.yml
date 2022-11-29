@@ -1,19 +1,21 @@
-uni_default:
-  label: 1. Default
+uni_1col:
+  label: 1 column
   category: Uni
-  template: templates/layout/layout--uni-default
+  template: templates/layout/layout--uni-1col/layout--uni-1col
   regions:
-    main:
-      label: Main content
+    col1:
+      label: Column 1
   icon_map:
-    - [padding, main, main, main, main, padding]
+    - [ col1 ]
 
-uni_full_width:
-  label: 2. Full width
+uni_2col:
+  label: 2 columns
   category: Uni
-  template: templates/layout/layout--uni-full-width
+  template: templates/layout/layout--uni-2col/layout--uni-2col
   regions:
-    main:
-      label: Main content
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
   icon_map:
-    - [ main ]
+    - [ col1, col2 ]

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.uni_section.uni_html_class
+    - field.field.paragraph.uni_section.uni_section_width
     - paragraphs.paragraphs_type.uni_section
 id: paragraph.uni_section.default
 targetEntityType: paragraph
@@ -11,3 +12,4 @@ mode: default
 content: {  }
 hidden:
   uni_html_class: true
+  uni_section_width: true

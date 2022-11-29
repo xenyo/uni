@@ -3,7 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.uni_section.uni_html_class
+    - field.field.paragraph.uni_section.uni_section_width
     - paragraphs.paragraphs_type.uni_section
+  module:
+    - select_text_value
 id: paragraph.uni_section.default
 targetEntityType: paragraph
 bundle: uni_section
@@ -16,9 +19,22 @@ content:
     third_party_settings: {  }
   uni_html_class:
     type: options_select
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  uni_section_width:
+    type: select_string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: '60'
+      placeholder: ''
+      select_type: radios
+      custom_value_field_title: ''
+      custom_value_field_description: ''
+      allowed_values: "standard\r\nfull-width"
+      custom_value_label: ''
     third_party_settings: {  }
 hidden:
   created: true

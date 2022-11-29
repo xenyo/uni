@@ -15,5 +15,5 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      uni_default: '1. Default'
-      uni_full_width: '2. Full width'
+      uni_1col: '1 column'
+      uni_2col: '2 columns'
