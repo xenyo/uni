@@ -4,6 +4,7 @@ type: module
 package: Uni
 core_version_requirement: ^9 || ^10
 dependencies:
+  - uni_toolbar:uni_toolbar
   - uni:media_uni_image
   - uni:node_uni_page
   - uni:paragraph_uni_card

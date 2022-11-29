@@ -50,6 +50,7 @@
         "drupal/twig_tools": "^1.4",
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
-        "drupal/weight": "^3.3"
+        "drupal/weight": "^3.3",
+        "xenyo/uni_toolbar": "^1.0"
     }
 }
