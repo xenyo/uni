@@ -4,13 +4,13 @@
   "type": "module",
   "browserslist": "defaults",
   "scripts": {
-    "watch": "rimraf .parcel-cache && nodemon --watch components --watch templates --ext mjs,scss --exec \"npm run compile\"",
+    "watch": "rimraf .parcel-cache && nodemon --ext mjs,scss --exec \"npm run compile\"",
     "build": "rimraf .parcel-cache && npm run compile",
-    "compile": "parcel build \"{components,templates}/**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash"
+    "compile": "parcel build \"**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
-    "@xenyo/parcel-config": "^1.2.0",
+    "@xenyo/parcel-config": "^1.5.0",
     "nodemon": "^2.0.20",
     "parcel": "^2.7.0",
     "rimraf": "^3.0.2"
