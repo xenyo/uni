@@ -9,6 +9,9 @@ function uni_preprocess_layout(&$variables) {
 
   $paragraph = $variables['settings']['layout_paragraphs_section']->getEntity();
 
+  // Add layout attributes
+  $variables['attributes']['class'] = $variables['suggestions'];
+
   // Add wrapper attributes
   $variables['wrapper_attributes'] = new Attribute();
   $variables['wrapper_attributes']->addClass('uni-wrapper');
