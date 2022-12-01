@@ -1,6 +1,5 @@
 <?php
 
-use Drupal\layout_paragraphs\LayoutParagraphsComponent;
 use Drupal\layout_paragraphs\LayoutParagraphsLayout;
 use Drupal\layout_paragraphs\LayoutParagraphsSection;
 use Drupal\paragraphs\Entity\Paragraph;
@@ -18,7 +17,7 @@ function node_uni_page_node_prepare_form($node, $operation, $form_state) {
 
   $uni_section = Paragraph::create([ 'type' => 'uni_section' ]);
   $section = new LayoutParagraphsSection($uni_section);
-  $section->setSettings([ 'layout' => 'uni_default' ]);
+  $section->setSettings([ 'layout' => 'uni_1col' ]);
 
   $layout = new LayoutParagraphsLayout($node->get('uni_page_items'));
   $layout->appendComponent($uni_section);
