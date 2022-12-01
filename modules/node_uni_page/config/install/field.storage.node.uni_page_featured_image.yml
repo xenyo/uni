@@ -2,17 +2,18 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - text
   enforced:
     module:
       - node_uni_page
-id: node.uni_page_description
-field_name: uni_page_description
+id: node.uni_page_featured_image
+field_name: uni_page_featured_image
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true
