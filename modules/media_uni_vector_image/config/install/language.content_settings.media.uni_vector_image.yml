@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.uni_vector_image
+id: media.uni_vector_image
+target_entity_type_id: media
+target_bundle: uni_vector_image
+default_langcode: site_default
+language_alterable: false

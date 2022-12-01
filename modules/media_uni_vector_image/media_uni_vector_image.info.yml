@@ -1,0 +1,20 @@
+name: Uni vector image
+description: Provides Uni vector image media type and related configuration.
+type: module
+package: Uni
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - drupal:content_translation
+  - drupal:field
+  - drupal:image
+  - drupal:language
+  - drupal:media
+  - svg_image_field:svg_image_field
+config_devel:
+  - core.entity_form_display.media.uni_vector_image.default
+  - core.entity_form_display.media.uni_vector_image.media_library
+  - core.entity_view_display.media.uni_vector_image.default
+  - core.entity_view_display.media.uni_vector_image.media_library
+  - field.field.media.uni_vector_image.field_media_svg
+  - language.content_settings.media.uni_vector_image
+  - media.type.uni_vector_image

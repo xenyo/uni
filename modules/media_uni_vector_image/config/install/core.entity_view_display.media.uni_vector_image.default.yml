@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.uni_vector_image.field_media_svg
+    - media.type.uni_vector_image
+  module:
+    - svg_image_field
+id: media.uni_vector_image.default
+targetEntityType: media
+bundle: uni_vector_image
+mode: default
+content:
+  field_media_svg:
+    type: svg_image_field_formatter
+    label: hidden
+    settings:
+      inline: false
+      apply_dimensions: false
+      width: 25
+      height: 25
+      enable_alt: false
+      enable_title: false
+      link: ''
+      force_fill: false
+      sanitize: 0
+      sanitize_remote: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

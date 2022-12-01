@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - svg_image_field
+  enforced:
+    module:
+      - media_uni_vector_image
+id: uni_vector_image
+label: 'Uni vector image'
+description: ''
+source: svg
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_svg
+field_map: {  }
