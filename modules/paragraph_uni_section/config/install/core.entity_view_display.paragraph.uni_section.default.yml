@@ -2,7 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.uni_section.uni_html_class
+    - field.field.paragraph.uni_section.uni_section_classes
+    - field.field.paragraph.uni_section.uni_section_grid_classes
+    - field.field.paragraph.uni_section.uni_section_region_classes
     - field.field.paragraph.uni_section.uni_section_width
     - paragraphs.paragraphs_type.uni_section
 id: paragraph.uni_section.default
@@ -11,5 +13,7 @@ bundle: uni_section
 mode: default
 content: {  }
 hidden:
-  uni_html_class: true
+  uni_section_classes: true
+  uni_section_grid_classes: true
+  uni_section_region_classes: true
   uni_section_width: true

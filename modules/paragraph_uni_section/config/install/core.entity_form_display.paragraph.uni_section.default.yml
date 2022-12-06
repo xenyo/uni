@@ -2,7 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.uni_section.uni_html_class
+    - field.field.paragraph.uni_section.uni_section_classes
+    - field.field.paragraph.uni_section.uni_section_grid_classes
+    - field.field.paragraph.uni_section.uni_section_region_classes
     - field.field.paragraph.uni_section.uni_section_width
     - paragraphs.paragraphs_type.uni_section
   module:
@@ -17,9 +19,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  uni_html_class:
+  uni_section_classes:
     type: options_select
-    weight: 2
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uni_section_grid_classes:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uni_section_region_classes:
+    type: options_select
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -33,7 +47,7 @@ content:
       select_type: radios
       custom_value_field_title: ''
       custom_value_field_description: ''
-      allowed_values: "standard\r\nfull-width"
+      allowed_values: "standard\r\nfull-width\r\nnarrow"
       custom_value_label: ''
     third_party_settings: {  }
 hidden:
