@@ -10,12 +10,19 @@ function uni_preprocess_layout(&$variables) {
   $paragraph = $variables['settings']['layout_paragraphs_section']->getEntity();
 
   // Add wrapper attributes
-  $variables['wrapper_attributes'] = new Attribute();
-  $variables['wrapper_attributes']->addClass('uni-wrapper');
-  if ($paragraph->hasField('uni_section_width')) {
-    $width = $paragraph->get('uni_section_width')->getString();
-    if ($width !== 'standard') {
-      $variables['wrapper_attributes']->addClass('uni-wrapper--' . $width);
+  $variables['wrapper_attributes'] = new Attribute([ 'class' => 'uni-wrapper' ]);
+  if ($paragraph->hasField('uni_section_wrapper_classes')) {
+    $terms = $paragraph->uni_section_wrapper_classes->referencedEntities();
+    foreach ($terms as $term) {
+      $variables['wrapper_attributes']->addClass($term->label());
+    }
+  }
+
+  // Add layout attributes
+  if ($paragraph->hasField('uni_section_layout_classes')) {
+    $terms = $paragraph->uni_section_layout_classes->referencedEntities();
+    foreach ($terms as $term) {
+      $variables['attributes']['class'][] = $term->label();
     }
   }
 
@@ -23,5 +30,13 @@ function uni_preprocess_layout(&$variables) {
   foreach ($variables['region_attributes'] as $region => $attributes) {
     $attributes->addClass('region');
     $attributes->addClass('region--' . $region);
+  }
+  if ($paragraph->hasField('uni_section_region_classes')) {
+    $terms = $paragraph->uni_section_region_classes->referencedEntities();
+    foreach ($terms as $term) {
+      foreach ($variables['region_attributes'] as $region => $attributes) {
+        $attributes->addClass($term->label());
+      }
+    }
   }
 }
