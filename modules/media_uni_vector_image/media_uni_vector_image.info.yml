@@ -1,5 +1,5 @@
-name: Uni vector image
-description: Provides Uni vector image media type and related configuration.
+name: Uni - Vector image
+description: Provides <em>Uni - Vector image</em> media type and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

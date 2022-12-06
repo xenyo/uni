@@ -1,5 +1,5 @@
-name: 'Uni text'
-description: 'Provides Uni text paragraphs type and related configuration. '
+name: Uni - Text
+description: Provides <em>Uni - Text</em> paragraphs type and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

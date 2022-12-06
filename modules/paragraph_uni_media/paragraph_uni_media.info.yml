@@ -1,5 +1,5 @@
-name: 'Uni media'
-description: 'Provides Uni media paragraphs type and related configuration. '
+name: Uni - Media
+description: Provides <em>Uni - Media</em> paragraphs type and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

@@ -1,4 +1,4 @@
-name: Uni installer
+name: Uni - Installer
 description: Installs all available modules provided by Xenyo Uni Framework.
 type: module
 package: Uni

@@ -1,5 +1,5 @@
-name: 'Uni section'
-description: 'Provides Uni section paragraphs type and related configuration. '
+name: Uni - Section
+description: Provides <em>Uni - Section</em> paragraphs type and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

@@ -1,5 +1,5 @@
-name: 'Uni page'
-description: 'Provides Uni page content type and related configuration. Use <em>uni pages</em> to build pages from Xenyo Uni Framework components.'
+name: Uni - Page
+description: Provides <em>Uni - Page</em> content type and related configuration. Use <em>uni pages</em> to build pages from Xenyo Uni Framework components.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

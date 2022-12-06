@@ -1,5 +1,5 @@
-name: 'Uni card'
-description: 'Provides Uni card paragraphs type and related configuration. '
+name: Uni - Card
+description: Provides <em>Uni - Card</em> paragraphs type and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

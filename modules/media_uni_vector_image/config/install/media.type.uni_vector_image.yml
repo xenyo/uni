@@ -7,7 +7,7 @@ dependencies:
     module:
       - media_uni_vector_image
 id: uni_vector_image
-label: 'Uni vector image'
+label: 'Uni - Vector image'
 description: ''
 source: svg
 queue_thumbnail_downloads: false

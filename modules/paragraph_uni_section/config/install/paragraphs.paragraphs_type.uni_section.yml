@@ -7,7 +7,7 @@ dependencies:
     module:
       - paragraph_uni_section
 id: uni_section
-label: 'Uni section'
+label: 'Uni - Section'
 icon_uuid: null
 icon_default: null
 description: ''

@@ -10,7 +10,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'Uni page'
+name: 'Uni - Page'
 type: uni_page
 description: 'Use <em>uni pages</em> to build pages from Xenyo Uni Framework components.'
 help: ''

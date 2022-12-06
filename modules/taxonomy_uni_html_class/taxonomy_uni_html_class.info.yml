@@ -1,5 +1,5 @@
-name: Uni HTML class
-description: Provides Uni HTML class taxonomy vocabulary and related configuration.
+name: Uni - HTML class
+description: Provides <em>Uni - HTML class</em> taxonomy vocabulary and related configuration.
 type: module
 package: Uni
 core_version_requirement: ^8.9 || ^9

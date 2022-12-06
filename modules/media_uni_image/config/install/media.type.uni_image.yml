@@ -10,7 +10,7 @@ third_party_settings:
   crop:
     image_field: _none
 id: uni_image
-label: 'Uni image'
+label: 'Uni - Image'
 description: 'An all purpose croppable image with responsive resizing.'
 source: image
 queue_thumbnail_downloads: false
