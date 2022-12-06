@@ -7,6 +7,18 @@
     gap: 60px;
   }
 
+  &.grid-1-2 {
+    @include above($md) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+  }
+
+  &.grid-2-1 {
+    @include above($md) {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+  }
+
   & > .region > .paragraph {
     @include paragraph-margin;
 
