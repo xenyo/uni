@@ -1,18 +1,23 @@
 @use 'sass-utils' as *;
 
 .layout--uni-2col {
-  & > * > .layout__regions {
+  & > .uni-wrapper > .layout__regions {
     @include above($md) {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 60px;
     }
 
-    & > * > .paragraph {
+    & > .region > .paragraph {
       @include paragraph-margin;
 
       @include above($md) {
-        @include trim-margin;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
   }

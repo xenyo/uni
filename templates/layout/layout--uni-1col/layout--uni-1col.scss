@@ -1,0 +1,14 @@
+@use 'sass-utils' as *;
+
+.layout--uni-1col {
+  & > .uni-wrapper > .region > .paragraph {
+    @include paragraph-margin;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
