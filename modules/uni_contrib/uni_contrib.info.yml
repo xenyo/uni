@@ -30,6 +30,7 @@ dependencies:
   - select2_all:select2_all
   - structure_sync:structure_sync
   - taxonomy_import:taxonomy_import
+  - text_block:text_block
   - token:token
   - toolbar_toggle:toolbar_toggle
   - twig_tools:twig_tools
