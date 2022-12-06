@@ -19,10 +19,4 @@
   @include below($sm) {
     padding: 0 15px;
   }
-
-  // Variations
-  &.uni-wrapper--full-width {
-    max-width: none;
-    padding: 0;
-  }
 }
