@@ -26,4 +26,5 @@ components:
 config_devel:
   install:
     - crop.type.uni_custom
-    - field.storage.paragraph.uni_html_class
+    - field.storage.node.uni_parent_page
+    - field.storage.paragraph.uni_classes

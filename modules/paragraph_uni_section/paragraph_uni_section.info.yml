@@ -12,7 +12,11 @@ config_devel:
   install:
     - core.entity_form_display.paragraph.uni_section.default
     - core.entity_view_display.paragraph.uni_section.default
-    - field.field.paragraph.uni_section.uni_html_class
-    - field.field.paragraph.uni_section.uni_section_width
-    - field.storage.paragraph.uni_section_width
+    - field.field.paragraph.uni_section.uni_classes
+    - field.field.paragraph.uni_section.uni_section_layout_classes
+    - field.field.paragraph.uni_section.uni_section_region_classes
+    - field.field.paragraph.uni_section.uni_section_wrapper_classes
+    - field.storage.paragraph.uni_section_layout_classes
+    - field.storage.paragraph.uni_section_region_classes
+    - field.storage.paragraph.uni_section_wrapper_classes
     - paragraphs.paragraphs_type.uni_section

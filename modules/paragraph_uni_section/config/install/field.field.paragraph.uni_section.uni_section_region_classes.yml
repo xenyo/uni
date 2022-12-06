@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.uni_section_region_classes
+    - paragraphs.paragraphs_type.uni_section
+    - taxonomy.vocabulary.uni_html_class
+id: paragraph.uni_section.uni_section_region_classes
+field_name: uni_section_region_classes
+entity_type: paragraph
+bundle: uni_section
+label: 'Region classes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uni_html_class: uni_html_class
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

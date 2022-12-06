@@ -7,8 +7,8 @@ dependencies:
   enforced:
     module:
       - uni
-id: paragraph.uni_html_class
-field_name: uni_html_class
+id: paragraph.uni_classes
+field_name: uni_classes
 entity_type: paragraph
 type: entity_reference
 settings:

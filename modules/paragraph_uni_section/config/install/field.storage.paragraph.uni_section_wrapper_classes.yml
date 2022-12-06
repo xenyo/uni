@@ -3,20 +3,19 @@ status: true
 dependencies:
   module:
     - paragraphs
+    - taxonomy
   enforced:
     module:
       - paragraph_uni_section
-id: paragraph.uni_section_width
-field_name: uni_section_width
+id: paragraph.uni_section_wrapper_classes
+field_name: uni_section_wrapper_classes
 entity_type: paragraph
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

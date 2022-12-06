@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.uni_section.uni_section_classes
-    - field.field.paragraph.uni_section.uni_section_grid_classes
+    - field.field.paragraph.uni_section.uni_classes
+    - field.field.paragraph.uni_section.uni_section_layout_classes
     - field.field.paragraph.uni_section.uni_section_region_classes
-    - field.field.paragraph.uni_section.uni_section_width
+    - field.field.paragraph.uni_section.uni_section_wrapper_classes
     - paragraphs.paragraphs_type.uni_section
 id: paragraph.uni_section.default
 targetEntityType: paragraph
@@ -13,7 +13,7 @@ bundle: uni_section
 mode: default
 content: {  }
 hidden:
-  uni_section_classes: true
-  uni_section_grid_classes: true
+  uni_classes: true
+  uni_section_layout_classes: true
   uni_section_region_classes: true
-  uni_section_width: true
+  uni_section_wrapper_classes: true

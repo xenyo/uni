@@ -2,13 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.uni_section.uni_section_classes
-    - field.field.paragraph.uni_section.uni_section_grid_classes
+    - field.field.paragraph.uni_section.uni_classes
+    - field.field.paragraph.uni_section.uni_section_layout_classes
     - field.field.paragraph.uni_section.uni_section_region_classes
-    - field.field.paragraph.uni_section.uni_section_width
+    - field.field.paragraph.uni_section.uni_section_wrapper_classes
     - paragraphs.paragraphs_type.uni_section
-  module:
-    - select_text_value
 id: paragraph.uni_section.default
 targetEntityType: paragraph
 bundle: uni_section
@@ -19,36 +17,29 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  uni_section_classes:
+  uni_classes:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uni_section_layout_classes:
     type: options_select
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  uni_section_grid_classes:
+  uni_section_region_classes:
     type: options_select
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  uni_section_region_classes:
+  uni_section_wrapper_classes:
     type: options_select
-    weight: 5
+    weight: 2
     region: content
     settings: {  }
-    third_party_settings: {  }
-  uni_section_width:
-    type: select_string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: '60'
-      placeholder: ''
-      select_type: radios
-      custom_value_field_title: ''
-      custom_value_field_description: ''
-      allowed_values: "standard\r\nfull-width\r\nnarrow"
-      custom_value_label: ''
     third_party_settings: {  }
 hidden:
   created: true
