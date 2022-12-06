@@ -1,0 +1,27 @@
+@use 'sass-utils' as *;
+
+.layout--uni-3col {
+  @include above($sm) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+
+  @include above($md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 60px;
+  }
+
+  & > .region > .paragraph {
+    @include paragraph-margin;
+
+    @include above($sm) {
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

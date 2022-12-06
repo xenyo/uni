@@ -17,3 +17,4 @@ behavior_plugins:
     available_layouts:
       uni_1col: '1 column'
       uni_2col: '2 columns'
+      uni_3col: '3 columns'

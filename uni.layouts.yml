@@ -19,3 +19,17 @@ uni_2col:
       label: Column 2
   icon_map:
     - [ col1, col2 ]
+
+uni_3col:
+  label: 3 columns
+  category: Uni
+  template: templates/layout/layout--uni-3col/layout--uni-3col
+  regions:
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
+    col3:
+      label: Column 3
+  icon_map:
+    - [ col1, col2, col3 ]
