@@ -21,15 +21,15 @@ fontawesome-duotone:
 really:
   css:
     base:
-      libraries/really/really.css: {}
+      node_modules/really.css/dist/css/really.css: {}
 
 swiper:
   css:
     base:
-      libraries/swiper/swiper-bundle.min.css: {}
+      node_modules/swiper/swiper-bundle.min.css: {}
   js:
-    libraries/swiper/swiper-bundle.min.js: {}
+    node_modules/swiper/swiper-bundle.min.js: {}
 
 underscore:
   js:
-    libraries/underscore/underscore-min.js: {}
+    node_modules/underscore/underscore-min.js: {}
