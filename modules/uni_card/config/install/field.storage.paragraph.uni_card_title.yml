@@ -3,16 +3,18 @@ status: true
 dependencies:
   module:
     - paragraphs
-    - text
   enforced:
     module:
-      - paragraph_uni_card
-id: paragraph.uni_card_description
-field_name: uni_card_description
+      - uni_card
+id: paragraph.uni_card_title
+field_name: uni_card_title
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

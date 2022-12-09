@@ -5,7 +5,7 @@ dependencies:
     - layout_paragraphs
   enforced:
     module:
-      - paragraph_uni_section
+      - uni_section
 id: uni_section
 label: 'Uni - Section'
 icon_uuid: null

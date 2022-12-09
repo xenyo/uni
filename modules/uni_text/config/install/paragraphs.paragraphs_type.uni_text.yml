@@ -3,9 +3,9 @@ status: true
 dependencies:
   enforced:
     module:
-      - paragraph_uni_card
-id: uni_card
-label: 'Uni - Card'
+      - uni_text
+id: uni_text
+label: 'Uni - Text'
 icon_uuid: null
 icon_default: null
 description: ''

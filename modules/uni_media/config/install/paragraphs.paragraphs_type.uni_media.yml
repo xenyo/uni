@@ -3,9 +3,9 @@ status: true
 dependencies:
   enforced:
     module:
-      - paragraph_uni_text
-id: uni_text
-label: 'Uni - Text'
+      - uni_media
+id: uni_media
+label: 'Uni - Media'
 icon_uuid: null
 icon_default: null
 description: ''

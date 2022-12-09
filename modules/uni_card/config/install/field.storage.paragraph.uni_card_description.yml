@@ -6,9 +6,9 @@ dependencies:
     - text
   enforced:
     module:
-      - paragraph_uni_text
-id: paragraph.uni_text
-field_name: uni_text
+      - uni_card
+id: paragraph.uni_card_description
+field_name: uni_card_description
 entity_type: paragraph
 type: text_long
 settings: {  }

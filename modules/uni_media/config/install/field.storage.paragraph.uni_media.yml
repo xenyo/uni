@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
-    - taxonomy
   enforced:
     module:
-      - paragraph_uni_section
-id: paragraph.uni_section_wrapper_classes
-field_name: uni_section_wrapper_classes
+      - uni_media
+id: paragraph.uni_media
+field_name: uni_media
 entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

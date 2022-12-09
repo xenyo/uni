@@ -6,7 +6,7 @@ dependencies:
     - paragraphs
   enforced:
     module:
-      - paragraph_uni_card
+      - uni_card
 id: paragraph.uni_card_link
 field_name: uni_card_link
 entity_type: paragraph

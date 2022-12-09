@@ -18,10 +18,10 @@ dependencies:
   - media_library:media_library
   - paragraphs_simple_selection:paragraphs_simple_selection
   - paragraphs:paragraphs
-  - uni:paragraph_uni_card
-  - uni:paragraph_uni_media
-  - uni:paragraph_uni_section
-  - uni:paragraph_uni_text
+  - uni:uni_card
+  - uni:uni_media
+  - uni:uni_section
+  - uni:uni_text
   - uni:uni
 config_devel:
   install:

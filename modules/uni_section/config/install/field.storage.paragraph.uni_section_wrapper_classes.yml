@@ -6,9 +6,9 @@ dependencies:
     - taxonomy
   enforced:
     module:
-      - paragraph_uni_section
-id: paragraph.uni_section_layout_classes
-field_name: uni_section_layout_classes
+      - uni_section
+id: paragraph.uni_section_wrapper_classes
+field_name: uni_section_wrapper_classes
 entity_type: paragraph
 type: entity_reference
 settings:

@@ -2,18 +2,17 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
   enforced:
     module:
-      - paragraph_uni_card
-id: paragraph.uni_card_title
-field_name: uni_card_title
+      - uni_card
+id: paragraph.uni_card_media
+field_name: uni_card_media
 entity_type: paragraph
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: media
 module: core
 locked: false
 cardinality: 1

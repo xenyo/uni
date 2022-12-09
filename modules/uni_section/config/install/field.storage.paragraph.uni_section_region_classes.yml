@@ -6,7 +6,7 @@ dependencies:
     - taxonomy
   enforced:
     module:
-      - paragraph_uni_section
+      - uni_section
 id: paragraph.uni_section_region_classes
 field_name: uni_section_region_classes
 entity_type: paragraph
