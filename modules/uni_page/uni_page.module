@@ -7,7 +7,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 /**
  * Implements hook_node_prepare_form().
  */
-function node_uni_page_node_prepare_form($node, $operation, $form_state) {
+function uni_page_node_prepare_form($node, $operation, $form_state) {
   if ($operation !== 'default') return;
   if (!$node->hasField('uni_page_items')) return;
 

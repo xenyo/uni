@@ -5,7 +5,7 @@ dependencies:
     - menu_ui
   enforced:
     module:
-      - node_uni_page
+      - uni_page
 third_party_settings:
   menu_ui:
     available_menus: {  }

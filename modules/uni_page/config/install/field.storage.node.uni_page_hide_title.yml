@@ -5,7 +5,7 @@ dependencies:
     - node
   enforced:
     module:
-      - node_uni_page
+      - uni_page
 id: node.uni_page_hide_title
 field_name: uni_page_hide_title
 entity_type: node
