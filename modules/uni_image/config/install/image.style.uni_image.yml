@@ -7,22 +7,22 @@ dependencies:
     - crop
   enforced:
     module:
-      - media_uni_image
-name: uni_image_md
-label: 'Uni image md'
+      - uni_image
+name: uni_image
+label: 'Uni image'
 effects:
-  579cb56e-b201-4849-bbb4-386243dc0b1e:
-    uuid: 579cb56e-b201-4849-bbb4-386243dc0b1e
+  8d335e95-3b44-46a1-8deb-14565c03deac:
+    uuid: 8d335e95-3b44-46a1-8deb-14565c03deac
     id: crop_crop
     weight: 1
     data:
       crop_type: uni_custom
       automatic_crop_provider: null
-  aad5a8c7-3e85-4370-b384-c755e688c90a:
-    uuid: aad5a8c7-3e85-4370-b384-c755e688c90a
+  58fde4f4-c7d9-4018-a85e-ce184c7c5ced:
+    uuid: 58fde4f4-c7d9-4018-a85e-ce184c7c5ced
     id: image_scale
     weight: 2
     data:
-      width: 1000
+      width: 1920
       height: null
       upscale: false

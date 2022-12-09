@@ -9,7 +9,7 @@ dependencies:
   - drupal:media_library
   - media_library_edit:media_library_edit
   - paragraphs:paragraphs
-  - uni:media_uni_image
+  - uni:uni_image
   - uni:uni
 config_devel:
   install:

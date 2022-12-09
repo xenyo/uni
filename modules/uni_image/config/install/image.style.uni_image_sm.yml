@@ -7,7 +7,7 @@ dependencies:
     - crop
   enforced:
     module:
-      - media_uni_image
+      - uni_image
 name: uni_image_sm
 label: 'Uni image sm'
 effects:

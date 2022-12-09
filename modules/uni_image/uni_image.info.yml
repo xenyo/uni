@@ -1,5 +1,5 @@
 name: Uni - Image
-description: Provides <em>Uni - Image</em> media type and related configuration.
+description: Provides <em>Uni - Image</em> feature and related configuration.
 type: module
 package: Uni
 core_version_requirement: '^8.9 || ^9'

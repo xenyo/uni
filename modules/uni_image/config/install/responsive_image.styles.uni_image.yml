@@ -14,7 +14,7 @@ dependencies:
     - uni
   enforced:
     module:
-      - media_uni_image
+      - uni_image
 id: uni_image
 label: 'Uni image'
 image_style_mappings:

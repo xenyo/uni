@@ -5,7 +5,7 @@ dependencies:
     - crop
   enforced:
     module:
-      - media_uni_image
+      - uni_image
 third_party_settings:
   crop:
     image_field: _none
