@@ -3,8 +3,8 @@ status: true
 dependencies:
   enforced:
     module:
-      - taxonomy_uni_html_class
+      - uni_html_class
 name: 'Uni - HTML class'
 vid: uni_html_class
 description: ''
-weight: 0
+weight: -10

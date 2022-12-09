@@ -6,7 +6,7 @@ core_version_requirement: '^8.9 || ^9'
 dependencies:
   - layout_paragraphs:layout_paragraphs
   - paragraphs:paragraphs
-  - uni:taxonomy_uni_html_class
+  - uni:uni_html_class
   - uni:uni
 config_devel:
   install:
