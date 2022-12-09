@@ -18,7 +18,6 @@ dependencies:
   - media_library:media_library
   - paragraphs_simple_selection:paragraphs_simple_selection
   - paragraphs:paragraphs
-  - uni:uni_card
   - uni:uni_media
   - uni:uni_section
   - uni:uni_text

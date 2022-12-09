@@ -7,7 +7,6 @@ dependencies:
   - uni_toolbar:uni_toolbar
   - uni:uni_image
   - uni:node_uni_page
-  - uni:uni_card
   - uni:uni_media
   - uni:uni_section
   - uni:uni_text

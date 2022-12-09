@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.node.uni_page_items
     - node.type.uni_page
-    - paragraphs.paragraphs_type.uni_card
     - paragraphs.paragraphs_type.uni_media
     - paragraphs.paragraphs_type.uni_section
     - paragraphs.paragraphs_type.uni_text
@@ -14,7 +13,7 @@ id: node.uni_page.uni_page_items
 field_name: uni_page_items
 entity_type: node
 bundle: uni_page
-label: 'Page content'
+label: Content
 description: ''
 required: false
 translatable: false
@@ -24,7 +23,6 @@ settings:
   handler: paragraphs_simple_selection
   handler_settings:
     target_bundles:
-      uni_card: uni_card
       uni_media: uni_media
       uni_section: uni_section
       uni_text: uni_text
@@ -32,5 +30,5 @@ settings:
       field: _none
       direction: ASC
     auto_create: 0
-    auto_create_bundle: uni_card
+    auto_create_bundle: uni_media
 field_type: entity_reference_revisions
