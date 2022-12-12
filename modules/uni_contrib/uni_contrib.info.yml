@@ -36,3 +36,4 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
+  - viewsreference:viewsreference
