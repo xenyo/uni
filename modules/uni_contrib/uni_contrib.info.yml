@@ -17,6 +17,7 @@ dependencies:
   - config_update:config_update
   - config_update:config_update_ui
   - dependency_status:dependency_status
+  - ds:ds
   - easy_breadcrumb:easy_breadcrumb
   - field_name_prefix_remove:field_name_prefix_remove
   - image_resize_filter:image_resize_filter
@@ -36,4 +37,8 @@ dependencies:
   - twig_tools:twig_tools
   - twig_tweak:twig_tweak
   - twigsuggest:twigsuggest
+  - ui_patterns:ui_patterns
+  - ui_patterns:ui_patterns_ds
+  - ui_patterns:ui_patterns_layouts
+  - ui_patterns:ui_patterns_library
   - viewsreference:viewsreference

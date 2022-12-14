@@ -20,6 +20,7 @@
         "drupal/config_split": "^1.9",
         "drupal/config_update": "^1.7",
         "drupal/dependency_status": "^1.0",
+        "drupal/ds": "^3.15",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/element_class_formatter": "^1.5",
         "drupal/field_group": "^3.2",
@@ -52,6 +53,7 @@
         "drupal/twig_tools": "^1.4",
         "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
+        "drupal/ui_patterns": "^1.4",
         "drupal/viewsreference": "^1.8",
         "drupal/weight": "^3.3",
         "xenyo/uni_toolbar": "^1.0"
