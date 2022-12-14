@@ -20,9 +20,6 @@ conflicts:
   - drupal:tour
   - drupal:update_manager
 asset_autoload: true
-components:
-  namespaces:
-    components: components
 config_devel:
   install:
     - crop.type.uni_custom
