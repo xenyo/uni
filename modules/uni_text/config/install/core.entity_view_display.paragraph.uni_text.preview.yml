@@ -2,28 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.uni_text.uni_text
     - paragraphs.paragraphs_type.uni_text
   module:
     - ds
     - text
-third_party_settings:
-  ds:
-    layout:
-      id: pattern_uni_text
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        pattern:
-          field_templates: default
-    regions:
-      text:
-        - uni_text
-id: paragraph.uni_text.default
+id: paragraph.uni_text.preview
 targetEntityType: paragraph
 bundle: uni_text
-mode: default
+mode: preview
 content:
   uni_text:
     type: text_default
@@ -32,9 +20,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
-    region: text
+    region: content
 hidden: {  }

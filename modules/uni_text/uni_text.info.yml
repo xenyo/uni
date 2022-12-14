@@ -6,12 +6,14 @@ core_version_requirement: '^8.9 || ^9'
 dependencies:
   - drupal:field
   - drupal:text
+  - ds:ds
   - paragraphs:paragraphs
   - uni:uni
 config_devel:
   install:
     - core.entity_form_display.paragraph.uni_text.default
     - core.entity_view_display.paragraph.uni_text.default
+    - core.entity_view_display.paragraph.uni_text.preview
     - field.field.paragraph.uni_text.uni_text
     - field.storage.paragraph.uni_text
     - paragraphs.paragraphs_type.uni_text
