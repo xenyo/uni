@@ -19,6 +19,7 @@ dependencies:
   - paragraphs_simple_selection:paragraphs_simple_selection
   - paragraphs:paragraphs
   - uni:uni_media
+  - uni:uni_pattern
   - uni:uni_section
   - uni:uni_text
   - uni:uni

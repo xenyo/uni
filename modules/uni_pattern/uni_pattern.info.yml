@@ -1,0 +1,18 @@
+name: Uni - Pattern
+description: Provides the <em>Uni - Pattern</em> feature and related configuration.
+type: module
+package: Uni
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - drupal:field
+  - paragraphs:paragraphs
+config_devel:
+  install:
+    - core.entity_form_display.paragraph.uni_pattern.default
+    - core.entity_view_display.paragraph.uni_pattern.default
+    - core.entity_view_display.paragraph.uni_pattern.preview
+    - field.field.paragraph.uni_pattern.uni_pattern_id
+    - field.field.paragraph.uni_pattern.uni_pattern_variant
+    - field.storage.paragraph.uni_pattern_id
+    - field.storage.paragraph.uni_pattern_variant
+    - paragraphs.paragraphs_type.uni_pattern

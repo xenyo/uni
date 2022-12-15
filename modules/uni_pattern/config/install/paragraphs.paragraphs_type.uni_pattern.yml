@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - uni_pattern
+id: uni_pattern
+label: 'Uni - Pattern'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

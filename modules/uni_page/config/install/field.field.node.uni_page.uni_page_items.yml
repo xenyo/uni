@@ -5,6 +5,7 @@ dependencies:
     - field.storage.node.uni_page_items
     - node.type.uni_page
     - paragraphs.paragraphs_type.uni_media
+    - paragraphs.paragraphs_type.uni_pattern
     - paragraphs.paragraphs_type.uni_section
     - paragraphs.paragraphs_type.uni_text
   module:
@@ -24,6 +25,7 @@ settings:
   handler_settings:
     target_bundles:
       uni_media: uni_media
+      uni_pattern: uni_pattern
       uni_section: uni_section
       uni_text: uni_text
     sort:

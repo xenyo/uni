@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uni_pattern.uni_pattern_id
+    - field.field.paragraph.uni_pattern.uni_pattern_variant
+    - paragraphs.paragraphs_type.uni_pattern
+id: paragraph.uni_pattern.default
+targetEntityType: paragraph
+bundle: uni_pattern
+mode: default
+content:
+  uni_pattern_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uni_pattern_variant:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
