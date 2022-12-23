@@ -1,0 +1,6 @@
+name: Uni Toolbar
+description: Enhances the Drupal toolbar for Xenyo Uni Framework sites.
+type: module
+package: Uni
+core_version_requirement: ^9 || ^10
+asset_autoload: true

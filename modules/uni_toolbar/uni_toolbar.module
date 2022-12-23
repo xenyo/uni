@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_js_settings_alter().
+ */
+function uni_toolbar_js_settings_alter(&$settings) {
+  // Disable toolbar breakpoints
+  $settings['toolbar']['breakpoints'] = [
+    'toolbar.narrow' => 'all',
+    'toolbar.standard' => 'all',
+    'toolbar.wide' => 'all',
+  ];
+}
+
+/**
+ * Implements hook_toolbar_alter().
+ */
+function uni_toolbar_toolbar_alter(&$items) {
+  foreach (array_keys($items) as $key) {
+    if ($key === 'admin_toolbar_tools') continue;
+    if ($key === 'admin_toolbar_local_tasks') continue;
+    if ($key === 'home') continue;
+    if ($key === 'administration') continue;
+    unset($items[$key]);
+  }
+}
