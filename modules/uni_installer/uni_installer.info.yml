@@ -4,7 +4,6 @@ type: module
 package: Uni
 core_version_requirement: ^9 || ^10
 dependencies:
-  - uni:node_uni_page
   - uni:uni
   - uni:uni_contrib
   - uni:uni_html_class
