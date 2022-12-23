@@ -4,7 +4,6 @@ type: module
 package: Uni
 core_version_requirement: ^9 || ^10
 dependencies:
-  - uni_toolbar:uni_toolbar
   - uni:node_uni_page
   - uni:uni
   - uni:uni_contrib
@@ -15,4 +14,5 @@ dependencies:
   - uni:uni_pattern
   - uni:uni_section
   - uni:uni_text
+  - uni:uni_toolbar
   - uni:uni_vector_image

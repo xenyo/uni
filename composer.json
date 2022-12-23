@@ -55,7 +55,6 @@
         "drupal/twigsuggest": "^1.0@beta",
         "drupal/ui_patterns": "^1.4",
         "drupal/viewsreference": "^1.8",
-        "drupal/weight": "^3.3",
-        "xenyo/uni_toolbar": "^1.0"
+        "drupal/weight": "^3.3"
     }
 }
