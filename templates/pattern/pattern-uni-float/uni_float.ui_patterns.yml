@@ -1,0 +1,22 @@
+uni_float:
+  label: Uni - Float
+  variants:
+    whole:
+      label: 1/1
+    half:
+      label: 1/2
+    third:
+      label: 1/3
+    quarter:
+      label: 1/4
+    fifth:
+      label: 1/5
+    sixth:
+      label: 1/6
+    seventh:
+      label: 1/7
+    eighth:
+      label: 1/8
+  fields:
+    fields:
+      label: Fields

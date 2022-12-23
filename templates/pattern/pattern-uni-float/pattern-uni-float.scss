@@ -1,0 +1,96 @@
+@use 'sass-utils' as *;
+
+.uni-float {
+  float: left;
+  margin: 0 20px 20px 0;
+
+  &--whole {
+    width: calc(100% / 1 - 20px);
+  }
+
+  &--half {
+    @include above($md) {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+
+  &--third {
+    @include above($md) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 3 - 20px);
+    }
+  }
+
+  &--quarter {
+    @include above($sm) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($md) {
+      width: calc(100% / 3 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 4 - 20px);
+    }
+  }
+
+  &--fifth {
+    @include above($sm) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($md) {
+      width: calc(100% / 3 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 5 - 20px);
+    }
+  }
+
+  &--sixth {
+    @include above($sm) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($md) {
+      width: calc(100% / 3 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 6 - 20px);
+    }
+  }
+
+  &--seventh {
+    @include above($sm) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($md) {
+      width: calc(100% / 4 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 7 - 20px);
+    }
+  }
+
+  &--eighth {
+    @include above($sm) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include above($md) {
+      width: calc(100% / 4 - 20px);
+    }
+
+    @include above($lg) {
+      width: calc(100% / 8 - 20px);
+    }
+  }
+}
