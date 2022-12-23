@@ -10,6 +10,7 @@ dependencies:
   - drupal:language
   - drupal:media
   - svg_image_field:svg_image_field
+  - svg_image_field:svg_image_field_media_bundle
 config_devel:
   - core.entity_form_display.media.uni_vector_image.default
   - core.entity_form_display.media.uni_vector_image.media_library
