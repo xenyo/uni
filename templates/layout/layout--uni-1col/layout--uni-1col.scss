@@ -1,7 +1,7 @@
 @use 'sass-utils' as *;
 
 .layout--uni-1col {
-  & > .region > .paragraph {
+  & > .region > * {
     @include paragraph-margin;
 
     &:first-of-type {

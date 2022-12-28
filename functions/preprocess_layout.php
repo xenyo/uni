@@ -16,4 +16,10 @@ function uni_preprocess_layout(&$variables) {
     $variables['wrapper_attributes']->addClass($class->getString());
   }
 
+  // Add region attributes
+  foreach ($variables['region_attributes'] as $region => $attributes) {
+    $attributes->addClass('region');
+    $attributes->addClass('region--' . $region);
+  }
+
 }

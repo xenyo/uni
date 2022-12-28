@@ -19,7 +19,7 @@
     }
   }
 
-  & > .region > .paragraph {
+  & > .region > * {
     @include paragraph-margin;
 
     @include above($md) {
