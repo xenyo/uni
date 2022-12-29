@@ -6,91 +6,164 @@
 
   &--whole {
     width: calc(100% / 1 - 20px);
+    clear: left;
   }
 
   &--half {
     @include above($md) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--third {
     @include above($md) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 3 - 20px);
+
+      &:nth-child(3n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--quarter {
     @include above($sm) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($md) {
       width: calc(100% / 3 - 20px);
+
+      &:nth-child(3n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 4 - 20px);
+
+      &:nth-child(4n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--fifth {
     @include above($sm) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($md) {
       width: calc(100% / 3 - 20px);
+
+      &:nth-child(3n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 5 - 20px);
+
+      &:nth-child(5n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--sixth {
     @include above($sm) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($md) {
       width: calc(100% / 3 - 20px);
+
+      &:nth-child(3n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 6 - 20px);
+
+      &:nth-child(6n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--seventh {
     @include above($sm) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($md) {
       width: calc(100% / 4 - 20px);
+
+      &:nth-child(4n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 7 - 20px);
+
+      &:nth-child(7n + 1) {
+        clear: left;
+      }
     }
   }
 
   &--eighth {
     @include above($sm) {
       width: calc(100% / 2 - 20px);
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
     }
 
     @include above($md) {
       width: calc(100% / 4 - 20px);
+
+      &:nth-child(4n + 1) {
+        clear: left;
+      }
     }
 
     @include above($lg) {
       width: calc(100% / 8 - 20px);
+
+      &:nth-child(8n + 1) {
+        clear: left;
+      }
     }
   }
 }
