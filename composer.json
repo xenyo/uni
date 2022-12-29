@@ -40,6 +40,7 @@
         "drupal/no_admin_destination_redirect": "^2.1",
         "drupal/paragraphs_simple_selection": "^1.0",
         "drupal/paragraphs": "^1.15",
+        "drupal/parent_node": "^1.0@beta",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
         "drupal/select_text_value": "^1.2",

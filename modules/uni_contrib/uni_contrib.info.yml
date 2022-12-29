@@ -26,6 +26,7 @@ dependencies:
   - menu_save_add_another:menu_save_add_another
   - metatag:metatag
   - no_admin_destination_redirect:no_admin_destination_redirect
+  - parent_node:parent_node
   - pathauto:pathauto
   - redirect:redirect
   - select2_all:select2_all
