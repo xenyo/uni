@@ -13,7 +13,6 @@ dependencies:
   - coi:coi
   - components:components
   - config_override_core_fields:config_override_core_fields
-  - config_split:config_split
   - config_update:config_update
   - config_update:config_update_ui
   - dependency_status:dependency_status
