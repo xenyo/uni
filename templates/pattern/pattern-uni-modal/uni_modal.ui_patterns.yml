@@ -1,0 +1,12 @@
+uni_modal:
+  label: Uni - Modal
+  variants:
+    default:
+      label: Default
+    mobile_menu:
+      label: Mobile menu
+  fields:
+    header:
+      label: Header
+    main:
+      label: Main
