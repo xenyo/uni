@@ -1,5 +1,10 @@
 @use 'sass-utils' as *;
 
+$xl: 1560px;
+$lg: 1170px;
+$md: 780px;
+$sm: 390px;
+
 .uni-cols > .field {
   display: grid;
   gap: 20px;
@@ -7,28 +12,100 @@
 
 .uni-cols--2 > .field {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include below($md) {
+    grid-template-columns: none;
+  }
 }
 
 .uni-cols--3 > .field {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: none;
+  }
 }
 
 .uni-cols--4 > .field {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include below($md) {
+    grid-template-columns: none;
+  }
 }
 
 .uni-cols--5 > .field {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @include below($md) {
+    grid-template-columns: none;
+  }
 }
 
 .uni-cols--6 > .field {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  @include below($md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .uni-cols--7 > .field {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  @include below($md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .uni-cols--8 > .field {
   grid-template-columns: repeat(8, minmax(0, 1fr));
+
+  @include below($xl) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  @include below($lg) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  @include below($md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
