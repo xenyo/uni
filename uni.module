@@ -1,5 +1,6 @@
 <?php
 
 include 'functions/layout_alter.php';
+include 'functions/page_attachments.php';
 include 'functions/preprocess_layout.php';
 include 'functions/preprocess.php';

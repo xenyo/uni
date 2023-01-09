@@ -1,0 +1,12 @@
+@use 'sass-utils' as *;
+
+.paragraph {
+  &:not(.lpb-layout) {
+    min-height: 20px;
+    padding: 0;
+  }
+
+  & > .lpb-controls + .field {
+    margin-top: 0;
+  }
+}
