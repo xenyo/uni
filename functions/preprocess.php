@@ -15,12 +15,14 @@ function uni_preprocess(&$variables, $hook, $info) {
       [ 'class' => $id ],
     );
 
-    $variant = Html::cleanCssIdentifier($variables['variant']);
-    if (!empty($variant)) {
-      $variables['attributes'] = AttributeHelper::mergeCollections(
-        $variables['attributes'] ?? [],
-        [ 'class' => "$id--$variant" ],
-      );
+    if (isset($variables['variant'])) {
+      $variant = Html::cleanCssIdentifier($variables['variant']);
+      if (!empty($variant)) {
+        $variables['attributes'] = AttributeHelper::mergeCollections(
+          $variables['attributes'] ?? [],
+          [ 'class' => "$id--$variant" ],
+        );
+      }
     }
   }
 }
