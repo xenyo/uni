@@ -20,6 +20,30 @@ uni_2col:
   icon_map:
     - [ col1, col2 ]
 
+uni_2col_1_2:
+  label: 2 columns 1-2
+  category: Uni
+  template: templates/layout/layout--uni-2col/layout--uni-2col
+  regions:
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
+  icon_map:
+    - [ col1, col2, col2 ]
+
+uni_2col_2_1:
+  label: 2 columns 2-1
+  category: Uni
+  template: templates/layout/layout--uni-2col/layout--uni-2col
+  regions:
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
+  icon_map:
+    - [ col1, col1, col2 ]
+
 uni_3col:
   label: 3 columns
   category: Uni

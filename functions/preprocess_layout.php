@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Component\Utility\Html;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Template\AttributeHelper;
 
@@ -7,6 +8,12 @@ function uni_preprocess_layout(&$variables) {
   $variables['attributes'] = AttributeHelper::mergeCollections(
     $variables['attributes'] ?? [],
     [ 'class' => $variables['suggestions'] ],
+  );
+
+  $layout_id = $variables['layout']->id();
+  $variables['attributes'] = AttributeHelper::mergeCollections(
+    $variables['attributes'],
+    [ 'class' => [ Html::cleanCssIdentifier("layout--$layout_id") ] ],
   );
 
   if (isset($variables['settings']['layout_paragraphs_section'])) {

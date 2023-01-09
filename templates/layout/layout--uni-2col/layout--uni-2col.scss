@@ -1,22 +1,12 @@
 @use 'sass-utils' as *;
 
 .layout--uni-2col {
-  @include above($md) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 60px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 
-  &.grid-1-2 {
-    @include above($md) {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    }
-  }
-
-  &.grid-2-1 {
-    @include above($md) {
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    }
+  @include below($md) {
+    display: block;
   }
 
   & > .region > * {
@@ -31,4 +21,12 @@
       }
     }
   }
+}
+
+.layout--uni-2col-1-2 {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+
+.layout--uni-2col-2-1 {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 }
