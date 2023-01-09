@@ -1,5 +1,7 @@
 @use "sass-utils" as *;
 
+@import 'uni-float';
+
 .uni-wrapper {
   // Horizontally center the wrapper in the parent
   margin: 0 auto;
