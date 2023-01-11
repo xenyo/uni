@@ -5,12 +5,12 @@ $lg: 1170px;
 $md: 780px;
 $sm: 390px;
 
-.uni-cols > .field {
+.uni-cols {
   display: grid;
   gap: 20px;
 }
 
-.uni-cols--2 > .field {
+.uni-cols--2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @include below($md) {
@@ -18,7 +18,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--3 > .field {
+.uni-cols--3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
   @include below($xl) {
@@ -30,7 +30,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--4 > .field {
+.uni-cols--4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 
   @include below($xl) {
@@ -46,7 +46,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--5 > .field {
+.uni-cols--5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 
   @include below($xl) {
@@ -62,7 +62,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--6 > .field {
+.uni-cols--6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 
   @include below($xl) {
@@ -78,7 +78,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--7 > .field {
+.uni-cols--7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 
   @include below($xl) {
@@ -94,7 +94,7 @@ $sm: 390px;
   }
 }
 
-.uni-cols--8 > .field {
+.uni-cols--8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 
   @include below($xl) {
